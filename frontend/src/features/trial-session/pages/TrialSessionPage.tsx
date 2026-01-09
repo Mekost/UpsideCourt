@@ -33,13 +33,17 @@ export function TrialSessionPage() {
                     />
                 )}
 
-                {state.phase === "QUESTION" && (
+                {state.phase === "QUESTION" && currentQuestion && (
                     <SceneQuestion
                         question={currentQuestion}
                         index={state.index}
                         total={state.questions.length}
                         onProceed={() => dispatch({ type: "GO_PLEAD" })}
                     />
+                )}
+
+                {state.phase === "QUESTION" && !currentQuestion && (
+                    <div style={{ padding: 24 }}>Ładuję pytanie…</div>
                 )}
 
                 {state.phase === "PLEAD" && (

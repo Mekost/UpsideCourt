@@ -19,9 +19,9 @@ async function postJSON<T>(path: string, body: unknown): Promise<T> {
 
 // Zakładam, że backend generuje pytania na podstawie trialId lub jakiegoś payloadu.
 // Jeśli macie inne pola — podmień tylko body.
-export async function generateQuestions(trialId: string): Promise<Question[]> {
-    const data = await postJSON<{ questions: Question[] }>("/generate-questions", { trialId });
-    return data.questions;
+export async function generateQuestion(trialId: string): Promise<Question> {
+    const data = await postJSON<Question>("/generate-question", { trialId });
+    return data;
 }
 
 export async function validateAnswer(args: {

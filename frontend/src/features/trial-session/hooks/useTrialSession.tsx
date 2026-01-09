@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useReducer, useState } from "react";
 import { createInitialState, reducer } from "../model/reducer";
-import { generateQuestions, validateAnswer } from "../api/trailSessionApi.tsx";
+import { generateQuestion, validateAnswer } from "../api/trailSessionApi.tsx";
 import type { Verdict } from "../model/types";
 
 export function useTrialSession(trialId: string) {
@@ -10,7 +10,8 @@ export function useTrialSession(trialId: string) {
 
     const [state, dispatch] = useReducer(reducer, createInitialState(trialId, []));
 
-    // 1) Generuj pytania na start
+    const TARGET_COUNT = 10;
+
     useEffect(() => {
         let alive = true;
 
@@ -18,9 +19,15 @@ export function useTrialSession(trialId: string) {
             try {
                 setLoadingQuestions(true);
                 setError(null);
-                const qs = await generateQuestions(trialId);
+
+                const questions = [];
+                for (let i = 0; i < TARGET_COUNT; i++) {
+                    const q = await generateQuestion(trialId);
+                    questions.push(q);
+                }
+
                 if (!alive) return;
-                dispatch({ type: "INIT_QUESTIONS", questions: qs });
+                dispatch({ type: "INIT_QUESTIONS", questions });
             } catch (e: any) {
                 if (!alive) return;
                 setError(e?.message ?? "Nie udało się wygenerować pytań");
@@ -33,6 +40,7 @@ export function useTrialSession(trialId: string) {
             alive = false;
         };
     }, [trialId]);
+
 
     const currentQuestion = useMemo(
         () => state.questions[state.index],
