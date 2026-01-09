@@ -1,0 +1,48 @@
+.court-banner {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+
+    background: linear-gradient(
+            180deg,
+            rgba(25, 22, 18, 0.95),
+            rgba(10, 10, 12, 0.85)
+    );
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.court-banner__left {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.court-banner__left img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.court-banner__title {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.court-banner__name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.court-banner__right {
+    text-align: right;
+    font-size: 13px;
+    opacity: 0.9;
+}
