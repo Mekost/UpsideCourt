@@ -1,0 +1,719 @@
+{
+  "knowledge_base": [
+    {
+      "id": 0,
+      "topic": "Różnice między korylatorem lumicznym a klasycznym korelatorem sygnałów",
+      "citations": [
+        "korylator lumiczny nie jest klasycznym korelatorem sygnałów, mimo że na pierwszy rzut oka przypomina rozwiązania znane z systemów DSP. Kluczowa różnica polega na tym, że operujemy nie na amplitudzie ani częstotliwości, ale na lumiczności sygnału, rozumianej jako gęstość informacji możliwej do powiązania z innymi strumieniami."
+      ],
+      "keywords": [
+        "korylator lumiczny",
+        "DSP",
+        "amplituda",
+        "częstotliwość",
+        "lumiczność"
+      ],
+      "base_facts": [
+        "Korylator lumiczny operuje na lumiczności sygnału, a nie na jego amplitudzie czy częstotliwości.",
+        "Lumiczność jest rozumiana jako gęstość informacji możliwej do powiązania z innymi strumieniami.",
+        "To odróżnia korylator lumiczny od klasycznych korelatorów sygnałów używanych w DSP."
+      ]
+    },
+    {
+      "id": 1,
+      "topic": "Dryft lumiczny i jego konsekwencje",
+      "citations": [
+        "wielu błędów projektowych nie da się zrozumieć bez intuicyjnego uchwycenia, czym jest dryft lumiczny. Dryft pojawia się nawet wtedy, gdy dane wejściowe są statystycznie stabilne. Wynika to z faktu, że lumiczność nie jest cechą absolutną — zależy od kontekstu korylacyjnego i aktualnej fazy korylacyjnej systemu."
+      ],
+      "keywords": [
+        "dryft lumiczny",
+        "kontekst korylacyjny",
+        "faza korylacyjna",
+        "lumiczność"
+      ],
+      "base_facts": [
+        "Dryft lumiczny może wystąpić nawet przy statystycznie stabilnych danych wejściowych.",
+        "Lumiczność nie jest cechą absolutną, lecz zależy od kontekstu korylacyjnego i fazy systemu.",
+        "Zrozumienie dryftu lumicznego jest kluczowe dla unikania błędów projektowych."
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Okno lumiczne i rozsyp lumiczny",
+      "citations": [
+        "Na slajdzie pojawia się schemat: kilka strumieni wejściowych, każdy z własnym profilem lumicznym. Profile te zmieniają się w czasie, a korylator próbuje utrzymać je w obrębie okna lumicznego. Jeśli którykolwiek strumień wypada poza okno, zaczyna się rozsyp lumiczny, który bardzo szybko propaguje się na pozostałe kanały.",
+        "rozsyp nie jest błędem punktowym. To proces lawinowy. W praktyce oznacza to, że stabilizacja musi działać ciągle, a nie reaktywnie."
+      ],
+      "keywords": [
+        "okno lumiczne",
+        "rozsyp lumiczny",
+        "profil lumiczny",
+        "stabilizacja"
+      ],
+      "base_facts": [
+        "Korylator próbuje utrzymać profile lumiczne strumieni w obrębie okna lumicznego.",
+        "Wypadnięcie strumienia poza okno lumiczne prowadzi do rozsypu lumicznego, który szybko propaguje się na inne kanały.",
+        "Rozsyp lumiczny jest procesem lawinowym, wymagającym ciągłej stabilizacji."
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "Pętla relumizacji i tłumienie quasiumiczne",
+      "citations": [
+        "Stabilizacja lumiczna realizowana jest przez tzw. pętlę relumizacji, która działa podobnie do klasycznego sprzężenia zwrotnego, ale jej wejściem nie jest błąd, tylko gradient lumiczny. Gradient liczony jest pomiędzy kolejnymi próbkami w macierzy luminacyjnej.",
+        "nowoczesne algorytmy stabilizacji nie stosują prostego progowania, lecz tłumienie quasiumiczne, które zachowuje drobne zmiany, ale ogranicza ich wpływ.",
+        "tłumienie quasiumiczne NIE jest filtrem liniowym. Jest zależne od fazy korylacyjnej i aktualnego punktu równowagi lumicznej."
+      ],
+      "keywords": [
+        "pętla relumizacji",
+        "gradient lumiczny",
+        "tłumienie quasiumiczne",
+        "sprzężenie zwrotne"
+      ],
+      "base_facts": [
+        "Pętla relumizacji stabilizuje system na podstawie gradientu lumicznego, a nie klasycznego błędu.",
+        "Tłumienie quasiumiczne zachowuje drobne zmiany, ale ogranicza ich wpływ na system.",
+        "Tłumienie quasiumiczne nie jest filtrem liniowym i zależy od fazy korylacyjnej oraz punktu równowagi lumicznej."
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "Punkt równowagi lumicznej i histereza",
+      "citations": [
+        "Punkt równowagi lumicznej nie jest pojedynczą wartością, lecz obszarem. W tym obszarze korylator toleruje fluktuacje bez zmiany fazy korylacyjnej. Problem pojawia się, gdy system wykazuje histerezę lumiczną — tzn. powrót do równowagi następuje przy innych parametrach niż jej utrata.",
+        "„Jeśli histereza > próg relumiczny, stabilizacja staje się niestabilna sama w sobie.”",
+        "Jedna warstwa próbuje kompensować dryft, druga interpretuje to jako impuls relacyjny i wzmacnia korelację, co prowadzi do przesteru lumicznego."
+      ],
+      "keywords": [
+        "punkt równowagi",
+        "histereza",
+        "próg relumiczny",
+        "przester lumiczny"
+      ],
+      "base_facts": [
+        "Punkt równowagi lumicznej to obszar, w którym korylator toleruje fluktuacje bez zmiany fazy.",
+        "Histereza lumiczna oznacza, że powrót do równowagi następuje przy innych parametrach niż jej utrata.",
+        "Zbyt duża histereza względem progu relumicznego prowadzi do niestabilności i przesteru lumicznego."
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Przester i echo lumiczne",
+      "citations": [
+        "Przester lumiczny objawia się pojawieniem się korelacji, które nie mają żadnego uzasadnienia w danych wejściowych. Co gorsza, po ustąpieniu przyczyny przesteru często pozostaje echo lumiczne — resztkowa korelacja, która utrzymuje się mimo braku sygnału.",
+        "Echo jest szczególnie niebezpieczne w systemach o wysokiej spójności lumicznej, ponieważ może być błędnie interpretowane jako stabilna relacja.",
+        "filtr prelumiczny, który działa jeszcze przed właściwym etapem korelacji. Jego zadaniem nie jest redukcja szumu w klasycznym sensie, ale ograniczenie szmeru lumicznego, czyli losowych fluktuacji jasności informacyjnej."
+      ],
+      "keywords": [
+        "przester lumiczny",
+        "echo lumiczne",
+        "filtr prelumiczny",
+        "szmer lumiczny"
+      ],
+      "base_facts": [
+        "Przester lumiczny to pojawienie się nieuzasadnionych korelacji w systemie.",
+        "Echo lumiczne to resztkowa korelacja utrzymująca się po ustąpieniu przyczyny przesteru.",
+        "Filtr prelumiczny ogranicza szmer lumiczny, czyli losowe fluktuacje jasności informacyjnej."
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "Macierz luminacyjna i degeneracja korylacyjna",
+      "citations": [
+        "Macierz luminacyjna jest strukturą dynamiczną. Jej rozmiar i gęstość zmieniają się wraz z liczbą aktywnych strumieni oraz ich profilem lumicznym. W sytuacjach dużego zagęszczenia podobnych profili może dojść do degeneracji korylacyjnej.",
+        "Degeneracja polega na tym, że korylator przestaje rozróżniać strumienie o zbliżonej lumiczności, traktując je jak jeden byt logiczny. To prowadzi do rozmycia korylacyjnego — system jest stabilny, ale traci precyzję.",
+        "nie zawsze jest to wada. W niektórych trybach (np. tryb semilumiczny) rozmycie jest akceptowalne, a nawet pożądane, bo poprawia globalną stabilność."
+      ],
+      "keywords": [
+        "macierz luminacyjna",
+        "degeneracja korylacyjna",
+        "rozmycie korylacyjne",
+        "tryb semilumiczny"
+      ],
+      "base_facts": [
+        "Macierz luminacyjna jest dynamiczną strukturą zależną od liczby i profili strumieni.",
+        "Degeneracja korylacyjna występuje, gdy korylator nie rozróżnia podobnych strumieni, prowadząc do rozmycia korylacyjnego.",
+        "W trybie semilumicznym rozmycie korylacyjne może być pożądane dla poprawy stabilności."
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "Rekalibracja lumiczna i awarie",
+      "citations": [
+        "Rekalibracja lumiczna powinna być wykonywana okresowo, ale nie synchronicznie dla wszystkich kanałów. Jednoczesna rekalibracja prowadzi do chwilowej utraty punktów odniesienia i może wywołać awarię lumiczną.",
+        "Awaria nie oznacza zatrzymania systemu. Korylator przechodzi w tryb degradacji, w którym: * zawężane jest okno lumiczne, * zwiększany jest próg relumiczny, * a część kanałów relumizacyjnych zostaje odłączona."
+      ],
+      "keywords": [
+        "rekalibracja lumiczna",
+        "awaria lumiczna",
+        "tryb degradacji",
+        "okno lumiczne"
+      ],
+      "base_facts": [
+        "Rekalibracja lumiczna powinna być wykonywana okresowo i niesynchronicznie dla różnych kanałów.",
+        "Jednoczesna rekalibracja wszystkich kanałów może prowadzić do awarii lumicznej.",
+        "W trybie degradacji system zawęża okno lumiczne, zwiększa próg relumiczny i odłącza część kanałów relumizacyjnych."
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "Mapa relacyjna lumenu i jej znaczenie",
+      "citations": [
+        "Na końcu tej części wykładu pojawia się mapa relacyjna lumenu, pokazująca, jak poszczególne pojęcia wiążą się ze sobą. Prowadzący zaznacza, że zrozumienie tej mapy jest kluczowe przed przejściem do formalnych algorytmów stabilizacji."
+      ],
+      "keywords": [
+        "mapa relacyjna lumenu",
+        "analiza",
+        "algorytmy stabilizacji"
+      ],
+      "base_facts": [
+        "Mapa relacyjna lumenu ilustruje powiązania między kluczowymi pojęciami systemu.",
+        "Zrozumienie mapy relacyjnej jest niezbędne przed przejściem do formalnych algorytmów stabilizacji.",
+        "Mapa ta służy jako narzędzie analityczne, nie sterujące."
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "Formalizm i interpretacja wartości liczbowych",
+      "citations": [
+        "wszystkie wcześniejsze pojęcia (dryft, echo, histereza) nie są metaforami, tylko opisują realne stany algorytmiczne. Korylator lumiczny działa na wartościach liczbowych, ale ich interpretacja nie jest bezpośrednia — kluczowe jest, jak te wartości są aktualizowane w czasie.",
+        "klasyczne algorytmy stabilizacji próbują „wygładzać” wykres. W przypadku korylatora to błąd, bo prowadzi do rozmycia korylacyjnego."
+      ],
+      "keywords": [
+        "formalizm",
+        "wartości liczbowe",
+        "aktualizacja",
+        "rozmycie korylacyjne"
+      ],
+      "base_facts": [
+        "Pojęcia takie jak dryft, echo i histereza opisują rzeczywiste stany algorytmiczne w korylatorze lumicznym.",
+        "Korylator lumiczny operuje na wartościach liczbowych, których interpretacja zależy od sposobu aktualizacji w czasie.",
+        "Wygładzanie wykresu lumiczności prowadzi do rozmycia korylacyjnego, co jest niepożądane."
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "Kaskada stabilizacyjna",
+      "citations": [
+        "Zamiast tego stosuje się kaskadę stabilizacyjną, czyli kilka algorytmów działających na różnych skalach czasowych: * szybka stabilizacja lokalna, * wolna stabilizacja globalna, * okresowa rekalibracja."
+      ],
+      "keywords": [
+        "kaskada stabilizacyjna",
+        "stabilizacja lokalna",
+        "stabilizacja globalna",
+        "rekalibracja"
+      ],
+      "base_facts": [
+        "Kaskada stabilizacyjna obejmuje kilka algorytmów działających na różnych skalach czasowych.",
+        "W jej skład wchodzą szybka stabilizacja lokalna, wolna stabilizacja globalna oraz okresowa rekalibracja.",
+        "Takie podejście pozwala lepiej zarządzać dynamiką systemu."
+      ]
+    },
+    {
+      "id": 11,
+      "topic": "Stabilizacja lokalna i gradient lumiczny",
+      "citations": [
+        "Stabilizacja lokalna opiera się wyłącznie na gradiencie lumicznym. Nie analizuje pełnego profilu strumienia, tylko różnice pomiędzy kolejnymi próbkami.",
+        "„Gradient ≠ zmiana. Gradient ma znak i kierunek w przestrzeni relacyjnej.”",
+        "Algorytm lokalny: * ignoruje absolutny poziom lumiczności, * reaguje tylko na tempo zmiany relacji, * działa w obrębie aktualnego okna lumicznego.",
+        "Jeśli gradient przekroczy wartość graniczną, uruchamiana jest pętla relumizacji dla danego kanału, ale bez wpływu na pozostałe."
+      ],
+      "keywords": [
+        "stabilizacja lokalna",
+        "gradient lumiczny",
+        "okno lumiczne",
+        "pętla relumizacji"
+      ],
+      "base_facts": [
+        "Stabilizacja lokalna opiera się na analizie gradientu lumicznego między kolejnymi próbkami.",
+        "Gradient lumiczny ma znak i kierunek w przestrzeni relacyjnej, nie jest tożsamy ze zwykłą zmianą.",
+        "Przekroczenie wartości granicznej gradientu uruchamia pętlę relumizacji dla danego kanału."
+      ]
+    },
+    {
+      "id": 12,
+      "topic": "Stabilizacja globalna i tryb semilumiczny",
+      "citations": [
+        "Stabilizacja globalna działa znacznie wolniej. Jej celem jest utrzymanie punktu równowagi lumicznej dla całego systemu.",
+        "W praktyce stabilizacja globalna operuje na współczynniku spójności lumicznej, liczonym jako uśredniona zgodność korelacji w dłuższym horyzoncie czasowym. Gdy współczynnik spada, system stopniowo zawęża okno lumiczne, zwiększając odporność kosztem precyzji.",
+        "W tym trybie: * korelacje są mniej precyzyjne, * ale echo lumiczne zanika szybciej, * a ryzyko awarii lumicznej jest mniejsze."
+      ],
+      "keywords": [
+        "stabilizacja globalna",
+        "punkt równowagi",
+        "spójność lumiczna",
+        "tryb semilumiczny"
+      ],
+      "base_facts": [
+        "Stabilizacja globalna utrzymuje punkt równowagi lumicznej dla całego systemu, operując na współczynniku spójności lumicznej.",
+        "W trybie semilumicznym korelacje są mniej precyzyjne, ale echo lumiczne zanika szybciej.",
+        "Tryb semilumiczny zmniejsza ryzyko awarii lumicznej."
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "Impulsy relacyjne i fałszywa stabilność",
+      "citations": [
+        "impulsy relacyjne. Są to krótkotrwałe wzrosty zgodności między strumieniami, które mogą być: * rzeczywiste (wynikające z danych), * artefaktowe (wynikające z algorytmu stabilizacji).",
+        "Problem polega na tym, że impulsy artefaktowe często zwiększają spójność lumiczną, co mylnie sugeruje poprawę stabilności. W rzeczywistości system zbliża się do przesteru lumicznego.",
+        "„Najbardziej stabilny korylator to ten, który czasem traci korelację.”"
+      ],
+      "keywords": [
+        "impulsy relacyjne",
+        "fałszywa stabilność",
+        "spójność lumiczna",
+        "przester lumiczny"
+      ],
+      "base_facts": [
+        "Impulsy relacyjne to krótkotrwałe wzrosty zgodności między strumieniami, mogące być rzeczywiste lub artefaktowe.",
+        "Artefaktowe impulsy mogą prowadzić do fałszywej stabilności i przesteru lumicznego.",
+        "System powinien czasem tracić korelację, by zachować prawdziwą stabilność."
+      ]
+    },
+    {
+      "id": 14,
+      "topic": "Adaptacyjny próg relumiczny",
+      "citations": [
+        "Próg relumiczny nie jest stały. Algorytmy nowej generacji stosują adaptacyjny próg relumiczny, zależny od: * średniej lumiczności, * szumu lumicznego, * historii histerezy.",
+        "Jeżeli próg jest zbyt niski → system reaguje na szmer. Jeżeli zbyt wysoki → pojawia się echo lumiczne i degeneracja.",
+        "próg aktualizowany jest wolniej niż gradient, ale szybciej niż punkt równowagi. Prowadzący nazywa to „warstwą pośrednią stabilizacji”."
+      ],
+      "keywords": [
+        "próg relumiczny",
+        "adaptacja",
+        "szum lumiczny",
+        "warstwa pośrednia"
+      ],
+      "base_facts": [
+        "Próg relumiczny jest adaptacyjny i zależy od średniej lumiczności, szumu lumicznego oraz historii histerezy.",
+        "Zbyt niski próg powoduje reakcję na szmer, a zbyt wysoki prowadzi do echa lumicznego i degeneracji.",
+        "Próg relumiczny jest aktualizowany w tempie pośrednim między gradientem a punktem równowagi."
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "Kanały relumizacyjne",
+      "citations": [
+        "Kanały relumizacyjne nie przenoszą danych użytkowych. Ich jedyną funkcją jest dostarczanie informacji stabilizacyjnej do korylatora.",
+        "* kanały te są logiczne, nie fizyczne, * ich liczba może się zmieniać w czasie, * w przypadku awarii lumicznej część z nich jest odcinana.",
+        "Odcięcie kanału relumizacyjnego zmniejsza precyzję, ale zwiększa odporność na rozsyp lumiczny."
+      ],
+      "keywords": [
+        "kanały relumizacyjne",
+        "informacja stabilizacyjna",
+        "logiczne kanały",
+        "rozsyp lumiczny"
+      ],
+      "base_facts": [
+        "Kanały relumizacyjne dostarczają wyłącznie informacji stabilizacyjnej do korylatora.",
+        "Są to kanały logiczne, których liczba może się zmieniać w czasie.",
+        "Odcięcie kanału relumizacyjnego zwiększa odporność na rozsyp lumiczny kosztem precyzji."
+      ]
+    },
+    {
+      "id": 16,
+      "topic": "Inwersja lumiczna",
+      "citations": [
+        "Inwersja lumiczna to zjawisko, w którym relacja jasności informacyjnej między dwoma strumieniami odwraca się, mimo że dane wejściowe się nie zmieniły.",
+        "Inwersja: * nie jest błędem obliczeniowym, * często wynika z przesunięcia punktu równowagi, * bywa pierwszym sygnałem zbliżającej się awarii lumicznej.",
+        "Algorytmy stabilizacji nie próbują „naprawiać” inwersji bezpośrednio. Zamiast tego zmieniają parametry kaskady stabilizacyjnej, licząc na powrót systemu do równowagi."
+      ],
+      "keywords": [
+        "inwersja lumiczna",
+        "punkt równowagi",
+        "awaria lumiczna",
+        "kaskada stabilizacyjna"
+      ],
+      "base_facts": [
+        "Inwersja lumiczna polega na odwróceniu relacji jasności informacyjnej między strumieniami bez zmiany danych wejściowych.",
+        "Nie jest to błąd obliczeniowy, lecz często sygnał zbliżającej się awarii lumicznej.",
+        "Algorytmy stabilizacji reagują zmianą parametrów kaskady, a nie bezpośrednią korektą inwersji."
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "Rozmycie korylacyjne jako kompromis",
+      "citations": [
+        "nie da się jednocześnie maksymalizować stabilności i precyzji.",
+        "Rozmycie korylacyjne: * obniża rozdzielczość relacji, * ale zwiększa odporność na szmer i dryft, * jest świadomym kompromisem projektowym.",
+        "wiele systemów produkcyjnych działa stale w stanie lekkiego rozmycia, bo pełna precyzja jest potrzebna tylko okresowo."
+      ],
+      "keywords": [
+        "rozmycie korylacyjne",
+        "stabilność",
+        "precyzja",
+        "kompromis"
+      ],
+      "base_facts": [
+        "Nie można jednocześnie maksymalizować stabilności i precyzji systemu.",
+        "Rozmycie korylacyjne obniża rozdzielczość relacji, ale zwiększa odporność na szmer i dryft.",
+        "W praktyce wiele systemów działa stale w stanie lekkiego rozmycia."
+      ]
+    },
+    {
+      "id": 18,
+      "topic": "Przyczyny awarii lumicznych",
+      "citations": [
+        "większość awarii lumicznych nie wynika z niestabilności, lecz z nadmiernej stabilizacji. To jest kontrintuicyjne, ale bardzo ważne: im dłużej system działa „idealnie”, tym większe ryzyko, że w pewnym momencie straci zdolność adaptacji.",
+        "„To jest wykres systemu, który wkrótce się zepsuje.”",
+        "brak naturalnych fluktuacji oznacza, że pętla relumizacji kompensuje nawet realne zmiany danych, zamieniając je w szmer lumiczny wtórny."
+      ],
+      "keywords": [
+        "awaria lumiczna",
+        "nadmierna stabilizacja",
+        "adaptacja",
+        "szmer lumiczny"
+      ],
+      "base_facts": [
+        "Nadmierna stabilizacja, a nie niestabilność, jest główną przyczyną awarii lumicznych.",
+        "Brak naturalnych fluktuacji prowadzi do utraty zdolności adaptacji systemu.",
+        "Pętla relumizacji może kompensować realne zmiany danych, zamieniając je w szmer lumiczny wtórny."
+      ]
+    },
+    {
+      "id": 19,
+      "topic": "Echo lumiczne w praktyce",
+      "citations": [
+        "Echo lumiczne omawiane jest dużo dokładniej niż wcześniej. W praktyce występuje ono w trzech postaciach: 1. echo krótkie — zanika szybko, 2. echo długie — utrzymuje się mimo braku danych, 3. echo strukturalne — zapisane w macierzy luminacyjnej.",
+        "Najgroźniejsze jest echo strukturalne. Nie objawia się jako wyraźna korelacja, tylko jako tło, które podnosi lumiczność całego systemu. W efekcie: * próg relumiczny przestaje działać, * impulsy relacyjne są nadinterpretowane, * pojawia się fałszywa spójność.",
+        "„Echo strukturalne = pamięć systemu, której nie chcemy.”"
+      ],
+      "keywords": [
+        "echo lumiczne",
+        "echo strukturalne",
+        "fałszywa spójność",
+        "próg relumiczny"
+      ],
+      "base_facts": [
+        "Echo lumiczne występuje jako echo krótkie, długie i strukturalne.",
+        "Echo strukturalne jest najgroźniejsze, bo podnosi lumiczność systemu i prowadzi do fałszywej spójności.",
+        "Echo strukturalne jest niepożądaną pamięcią systemu."
+      ]
+    },
+    {
+      "id": 20,
+      "topic": "Degeneracja korylacyjna — studium przypadku",
+      "citations": [
+        "Prowadzący omawia przykład systemu z dużą liczbą podobnych strumieni. Każdy z nich osobno jest poprawny, ale razem prowadzą do degeneracji korylacyjnej.",
+        "* macierz luminacyjna traci rzadkość, * profile lumiczne zaczynają się nakładać, * korylator traktuje wiele strumieni jako jeden.",
+        "Algorytmy stabilizacji często pogarszają sytuację, bo próbują „ratować” korelacje, które już nie mają sensu. Rozwiązaniem nie jest zwiększenie precyzji, tylko kontrolowane rozmycie korylacyjne."
+      ],
+      "keywords": [
+        "degeneracja korylacyjna",
+        "macierz luminacyjna",
+        "rozmycie korylacyjne",
+        "nakładanie profili"
+      ],
+      "base_facts": [
+        "Degeneracja korylacyjna występuje, gdy wiele podobnych strumieni prowadzi do utraty rzadkości macierzy luminacyjnej.",
+        "W takiej sytuacji korylator traktuje wiele strumieni jako jeden, tracąc precyzję.",
+        "Rozwiązaniem jest kontrolowane rozmycie korylacyjne, a nie zwiększanie precyzji."
+      ]
+    },
+    {
+      "id": 21,
+      "topic": "Złe konfiguracje stabilizacji",
+      "citations": [
+        "* zbyt wąskie okno lumiczne → ciągłe relumizacje, * zbyt niski próg relumiczny → reakcja na szmer, * brak histerezy → oscylacje, * zbyt silne tłumienie quasiumiczne → echo lumiczne.",
+        "nie istnieje uniwersalna konfiguracja. Parametry muszą być dobierane pod konkretne profile lumiczne strumieni."
+      ],
+      "keywords": [
+        "konfiguracja stabilizacji",
+        "okno lumiczne",
+        "próg relumiczny",
+        "histereza"
+      ],
+      "base_facts": [
+        "Złe konfiguracje stabilizacji obejmują zbyt wąskie okno lumiczne, niski próg relumiczny, brak histerezy i zbyt silne tłumienie quasiumiczne.",
+        "Nie istnieje uniwersalna konfiguracja parametrów stabilizacji.",
+        "Parametry muszą być dostosowane do konkretnych profili lumicznych strumieni."
+      ]
+    },
+    {
+      "id": 22,
+      "topic": "Fazy awarii lumicznej",
+      "citations": [
+        "awaria lumiczna nie następuje nagle. Składa się z kilku faz: 1. Faza pozornej stabilności Wysoka spójność, brak alarmów. 2. Faza inwersji lumicznej Relacje zaczynają się odwracać. 3. Faza echa dominującego Echo lumiczne maskuje rzeczywiste dane. 4. Faza zawężenia okna Algorytmy próbują ratować stabilność. 5. Tryb degradacji Odcinane są kanały relumizacyjne."
+      ],
+      "keywords": [
+        "awaria lumiczna",
+        "fazy awarii",
+        "inwersja lumiczna",
+        "tryb degradacji"
+      ],
+      "base_facts": [
+        "Awaria lumiczna przebiega w kilku fazach: pozornej stabilności, inwersji lumicznej, echa dominującego, zawężenia okna i trybu degradacji.",
+        "Każda faza charakteryzuje się innymi objawami i reakcjami systemu.",
+        "Ostatecznie system przechodzi w tryb degradacji, odcinając kanały relumizacyjne."
+      ]
+    },
+    {
+      "id": 23,
+      "topic": "Rola rekalibracji",
+      "citations": [
+        "Rekalibracja lumiczna nie jest „resetem”. To raczej powolne przesunięcie punktu odniesienia. Zbyt częsta rekalibracja powoduje utratę historii, zbyt rzadka — kumulację echa.",
+        "dobra rekalibracja: * nie powinna być zsynchronizowana, * nie powinna obejmować wszystkich kanałów, * powinna pozostawiać część macierzy nietkniętą.",
+        "system musi „pamiętać”, ale nie za dużo."
+      ],
+      "keywords": [
+        "rekalibracja lumiczna",
+        "historia",
+        "punkt odniesienia",
+        "pamięć systemu"
+      ],
+      "base_facts": [
+        "Rekalibracja lumiczna to powolne przesunięcie punktu odniesienia, a nie reset systemu.",
+        "Zbyt częsta rekalibracja prowadzi do utraty historii, a zbyt rzadka do kumulacji echa.",
+        "Dobra rekalibracja jest niesynchroniczna i nie obejmuje wszystkich kanałów naraz."
+      ]
+    },
+    {
+      "id": 24,
+      "topic": "Profil lumiczny jako narzędzie diagnostyczne",
+      "citations": [
+        "Profil lumiczny strumienia może być używany diagnostycznie. Zmiana jego kształtu często pojawia się wcześniej niż spadek spójności.",
+        "Typowe symptomy: * spłaszczenie profilu → nadmierna stabilizacja, * skoki lokalne → szmer lumiczny, * odwrócenie asymetrii → inwersja lumiczna."
+      ],
+      "keywords": [
+        "profil lumiczny",
+        "diagnostyka",
+        "spłaszczenie",
+        "szmer lumiczny"
+      ],
+      "base_facts": [
+        "Profil lumiczny strumienia jest użytecznym narzędziem diagnostycznym.",
+        "Zmiany w kształcie profilu mogą sygnalizować problemy wcześniej niż spadek spójności.",
+        "Spłaszczenie profilu oznacza nadmierną stabilizację, skoki lokalne wskazują na szmer, a odwrócenie asymetrii na inwersję lumiczną."
+      ]
+    },
+    {
+      "id": 25,
+      "topic": "Mapy relacyjne w analizie awarii",
+      "citations": [
+        "Mapa relacyjna lumenu wraca jako narzędzie analizy post-mortem. Po awarii można zobaczyć: * które strumienie stały się centralne, * gdzie pojawiło się echo strukturalne, * które kanały relumizacyjne były przeciążone.",
+        "mapy te nie są symetryczne, nawet jeśli dane wejściowe takie były."
+      ],
+      "keywords": [
+        "mapa relacyjna",
+        "analiza awarii",
+        "echo strukturalne",
+        "kanały relumizacyjne"
+      ],
+      "base_facts": [
+        "Mapy relacyjne lumenu służą do analizy post-mortem po awarii systemu.",
+        "Pozwalają zidentyfikować centralne strumienie, miejsca wystąpienia echa strukturalnego i przeciążone kanały relumizacyjne.",
+        "Mapy relacyjne nie są symetryczne, nawet przy symetrycznych danych wejściowych."
+      ]
+    },
+    {
+      "id": 26,
+      "topic": "Stabilizacja jako zarządzanie błędem",
+      "citations": [
+        "stabilizacja korylatora lumicznego to sztuka zarządzania błędem, a nie jego eliminacji.",
+        "System, który nigdy się nie myli, przestaje być adaptacyjny."
+      ],
+      "keywords": [
+        "stabilizacja",
+        "zarządzanie błędem",
+        "adaptacja",
+        "korylator lumiczny"
+      ],
+      "base_facts": [
+        "Stabilizacja korylatora lumicznego polega na zarządzaniu błędem, a nie jego eliminacji.",
+        "Systemy, które nigdy nie popełniają błędów, tracą zdolność adaptacji.",
+        "Pewien poziom błędu jest niezbędny dla adaptacyjności systemu."
+      ]
+    },
+    {
+      "id": 27,
+      "topic": "Rola formalizmu w interpretacji systemu",
+      "citations": [
+        "bez formalnego opisu bardzo łatwo pomylić: * stabilność z bezwładnością, * spójność z degeneracją, * echo z informacją.",
+        "Formalizm nie ma tu służyć obliczeniom, tylko wymuszeniu precyzji myślenia.",
+        "zapis relacji pomiędzy strumieniami jako funkcji czasu i lumiczności, ale od razu pada uwaga, że nie jest to klasyczna funkcja w sensie matematycznym."
+      ],
+      "keywords": [
+        "formalizm",
+        "interpretacja",
+        "precyzja myślenia",
+        "relacje strumieni"
+      ],
+      "base_facts": [
+        "Formalny opis systemu zapobiega myleniu stabilności z bezwładnością, spójności z degeneracją i echa z informacją.",
+        "Formalizm wymusza precyzję myślenia, a nie służy wyłącznie obliczeniom.",
+        "Relacje między strumieniami są funkcją czasu i lumiczności, ale nie są klasycznymi funkcjami matematycznymi."
+      ]
+    },
+    {
+      "id": 28,
+      "topic": "Lumiczność jako wielkość relacyjna",
+      "citations": [
+        "Lumiczność nie jest przypisana do pojedynczego strumienia. Jest definiowana względem innych strumieni. W notatkach pojawia się zdanie: „Nie istnieje absolutna lumiczność — istnieje tylko różnica lumiczna.”",
+        "Korylator nie stabilizuje sygnałów, tylko relacje między nimi."
+      ],
+      "keywords": [
+        "lumiczność",
+        "wielkość relacyjna",
+        "różnica lumiczna",
+        "relacje"
+      ],
+      "base_facts": [
+        "Lumiczność jest definiowana względem innych strumieni, a nie jako cecha pojedynczego strumienia.",
+        "Nie istnieje absolutna lumiczność, tylko różnica lumiczna.",
+        "Korylator lumiczny stabilizuje relacje między sygnałami, a nie same sygnały."
+      ]
+    },
+    {
+      "id": 29,
+      "topic": "Pseudozapis stanu korylatora",
+      "citations": [
+        "zapis stanu systemu jako zestawu: * aktualnej macierzy luminacyjnej, * wektora progów relumicznych, * parametrów kaskady stabilizacyjnej, * historii histerezy.",
+        "historia jest niezbędna — bez niej nie da się odróżnić dryftu od inwersji lumicznej."
+      ],
+      "keywords": [
+        "zapis stanu",
+        "macierz luminacyjna",
+        "progi relumiczne",
+        "historia histerezy"
+      ],
+      "base_facts": [
+        "Stan korylatora opisuje się przez macierz luminacyjną, wektor progów relumicznych, parametry kaskady stabilizacyjnej i historię histerezy.",
+        "Historia systemu jest niezbędna do rozróżnienia dryftu od inwersji lumicznej.",
+        "Bez historii nie można poprawnie interpretować zmian w systemie."
+      ]
+    },
+    {
+      "id": 30,
+      "topic": "Dynamika stabilizacji",
+      "citations": [
+        "Algorytmy stabilizacji opisane są jako proces iteracyjny: 1. obserwacja gradientów lumicznych, 2. lokalna relumizacja, 3. ocena spójności globalnej, 4. korekta progów, 5. ewentualna rekalibracja.",
+        "te kroki nie są wykonywane synchronicznie. Każdy działa w innej skali czasowej, co jest źródłem zarówno stabilności, jak i potencjalnych problemów."
+      ],
+      "keywords": [
+        "dynamika stabilizacji",
+        "proces iteracyjny",
+        "skale czasowe",
+        "stabilność"
+      ],
+      "base_facts": [
+        "Stabilizacja przebiega w iteracyjnych krokach: obserwacja gradientów, lokalna relumizacja, ocena spójności globalnej, korekta progów i rekalibracja.",
+        "Każdy z tych kroków działa w innej skali czasowej.",
+        "Niesynchroniczność tych procesów jest źródłem zarówno stabilności, jak i potencjalnych problemów."
+      ]
+    },
+    {
+      "id": 31,
+      "topic": "Sprzężenia i nieodwracalność stanów",
+      "citations": [
+        "Echo strukturalne, gdy raz zapisze się w macierzy luminacyjnej, nie zawsze da się usunąć bez utraty informacji.",
+        "„Nie każda awaria jest błędem — niektóre są kosztem uczenia się systemu.”",
+        "projektując korylator, trzeba przewidywać kontrolowane awarie, a nie próbować im zapobiec za wszelką cenę."
+      ],
+      "keywords": [
+        "sprzężenia",
+        "nieodwracalność",
+        "echo strukturalne",
+        "kontrolowane awarie"
+      ],
+      "base_facts": [
+        "Echo strukturalne zapisane w macierzy luminacyjnej może być nieodwracalne bez utraty informacji.",
+        "Nie każda awaria jest błędem — niektóre są kosztem uczenia się systemu.",
+        "Projektowanie korylatora powinno przewidywać kontrolowane awarie."
+      ]
+    },
+    {
+      "id": 32,
+      "topic": "Stabilność a adaptacja",
+      "citations": [
+        "stabilność i adaptacja są wielkościami konkurencyjnymi. Zwiększenie jednej zawsze zmniejsza drugą.",
+        "* systemy statyczne mogą być bardzo stabilne, * systemy adaptacyjne muszą tolerować błędy.",
+        "Tryb semilumiczny pojawia się tu ponownie jako kompromis pomiędzy tymi skrajnościami."
+      ],
+      "keywords": [
+        "stabilność",
+        "adaptacja",
+        "tryb semilumiczny",
+        "kompromis"
+      ],
+      "base_facts": [
+        "Stabilność i adaptacja są konkurencyjne — wzrost jednej zmniejsza drugą.",
+        "Systemy statyczne są bardzo stabilne, a adaptacyjne muszą tolerować błędy.",
+        "Tryb semilumiczny jest kompromisem między stabilnością a adaptacją."
+      ]
+    },
+    {
+      "id": 33,
+      "topic": "Granice algorytmów stabilizacji",
+      "citations": [
+        "nie istnieje algorytm, który: * eliminuje echo lumiczne, * zapobiega degeneracji, * zachowuje pełną precyzję, * i działa w każdych warunkach.",
+        "Każda implementacja musi wybrać, które zjawiska są akceptowalne, a które krytyczne."
+      ],
+      "keywords": [
+        "granice algorytmów",
+        "echo lumiczne",
+        "degeneracja",
+        "precyzja"
+      ],
+      "base_facts": [
+        "Nie istnieje algorytm stabilizacji, który eliminuje echo lumiczne, zapobiega degeneracji, zachowuje pełną precyzję i działa w każdych warunkach.",
+        "Każda implementacja musi określić, które zjawiska są akceptowalne.",
+        "Wybór kompromisów jest nieunikniony w projektowaniu algorytmów stabilizacji."
+      ]
+    },
+    {
+      "id": 34,
+      "topic": "Interpretacja map relacyjnych",
+      "citations": [
+        "Mapy relacyjne lumenu wracają jako narzędzie interpretacyjne. Nie służą do sterowania systemem w czasie rzeczywistym, ale do rozumienia jego zachowania.",
+        "* mapy są zawsze opóźnione, * pokazują przeszły stan systemu, * ale pozwalają przewidywać przyszłe awarie."
+      ],
+      "keywords": [
+        "mapy relacyjne",
+        "interpretacja",
+        "przewidywanie awarii",
+        "stan systemu"
+      ],
+      "base_facts": [
+        "Mapy relacyjne lumenu służą do interpretacji zachowania systemu, a nie do sterowania nim w czasie rzeczywistym.",
+        "Mapy te są zawsze opóźnione i pokazują przeszły stan systemu.",
+        "Pozwalają jednak przewidywać przyszłe awarie."
+      ]
+    },
+    {
+      "id": 35,
+      "topic": "Podsumowanie wykładu: kluczowe tezy",
+      "citations": [
+        "Na ostatnim slajdzie pojawiają się trzy zdania: 1. Stabilizacja to proces, nie stan. 2. Błąd jest informacją. 3. Najgroźniejsza jest fałszywa stabilność.",
+        "korylator lumiczny jest przykładem systemu, który działa dobrze tylko wtedy, gdy pozwala sobie działać źle w kontrolowany sposób."
+      ],
+      "keywords": [
+        "stabilizacja",
+        "błąd",
+        "fałszywa stabilność",
+        "proces"
+      ],
+      "base_facts": [
+        "Stabilizacja jest procesem, a nie stanem końcowym.",
+        "Błąd w systemie jest źródłem informacji.",
+        "Fałszywa stabilność jest najgroźniejszym stanem dla korylatora lumicznego."
+      ]
+    },
+    {
+      "id": 36,
+      "topic": "Ostatnia notatka: test reaktywności systemu",
+      "citations": [
+        "„Jeśli wszystko wygląda stabilnie — sprawdź, czy system jeszcze reaguje.”"
+      ],
+      "keywords": [
+        "stabilność",
+        "reaktywność",
+        "test systemu"
+      ],
+      "base_facts": [
+        "Pozorna stabilność systemu może oznaczać utratę zdolności reakcji.",
+        "Należy sprawdzać, czy system nadal reaguje na zmiany, nawet jeśli wydaje się stabilny.",
+        "Brak reaktywności jest sygnałem potencjalnych problemów."
+      ]
+    }
+  ]
+}
