@@ -7,6 +7,8 @@ const { OpenAI } = require("openai");
 const fs = require("fs");
 const cors = require("cors");
 const mammoth = require("mammoth");
+const pdf = require("pdf-extraction");
+const Tesseract = require("tesseract.js");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
@@ -72,9 +74,8 @@ async function callOpenAIWithRetry(content, maxRetries = 3) {
 
 app.post("/process-notes", upload.array("notes"), async (req, res) => {
   const quizName = req.body.quizName;
-  if (!quizName) return res.status(400).json({ error: "Missing quizName" });
-  if (!req.files || req.files.length === 0)
-    return res.status(400).json({ error: "No files uploaded" });
+  if (!quizName || !req.files)
+    return res.status(400).json({ error: "Data missing" });
 
   const notesDir = path.join(__dirname, "notes", quizName);
   const jsonDir = path.join(__dirname, "json", quizName);
@@ -84,35 +85,52 @@ app.post("/process-notes", upload.array("notes"), async (req, res) => {
   let combinedText = "";
 
   try {
-    // Process each file in the array
     for (const file of req.files) {
       const extension = path.extname(file.originalname).toLowerCase();
       const permanentPath = path.join(notesDir, file.originalname);
-
-      // Move file to permanent storage
       fs.renameSync(file.path, permanentPath);
 
-      // Extract Text based on file type
+      console.log(`--- Processing: ${file.originalname} ---`);
+
       if (extension === ".docx") {
         const result = await mammoth.extractRawText({ path: permanentPath });
-        combinedText += `\n--- Source: ${file.originalname} ---\n${result.value}`;
+        combinedText += `\n[DOCX: ${file.originalname}]\n${result.value}`;
       } else if (extension === ".txt") {
-        const text = fs.readFileSync(permanentPath, "utf-8");
-        combinedText += `\n--- Source: ${file.originalname} ---\n${text}`;
+        combinedText += `\n[TXT: ${file.originalname}]\n${fs.readFileSync(
+          permanentPath,
+          "utf-8"
+        )}`;
+      } else if (extension === ".pdf") {
+        const dataBuffer = fs.readFileSync(permanentPath);
+        const data = await pdf(dataBuffer);
+        combinedText += `\n[PDF: ${file.originalname}]\n${data.text}`;
+      } else if ([".png", ".jpg", ".jpeg"].includes(extension)) {
+        console.log(`Starting OCR for ${file.originalname}...`);
+        const result = await Tesseract.recognize(permanentPath, "eng", {
+          logger: (m) =>
+            console.log(
+              `OCR Progress: ${m.status} (${Math.round(m.progress * 100)}%)`
+            ),
+        });
+        combinedText += `\n[IMAGE OCR: ${file.originalname}]\n${result.data.text}`;
       }
     }
 
-    // AI Processing of the combined content
+    if (!combinedText.trim()) {
+      throw new Error("No text could be extracted from any files.");
+    }
+
+    console.log("Extraction complete. Sending to AI...");
     const result = await callOpenAIWithRetry(combinedText);
 
-    // Save output
-    const outputFilePath = path.join(jsonDir, "knowledge.json");
-    fs.writeFileSync(outputFilePath, JSON.stringify(result, null, 2));
-
+    fs.writeFileSync(
+      path.join(jsonDir, "knowledge.json"),
+      JSON.stringify(result, null, 2)
+    );
     res.json(result);
   } catch (error) {
     console.error("Processing Error:", error);
-    res.status(500).json({ error: "Failed to process documents." });
+    res.status(500).json({ error: error.message });
   }
 });
 
