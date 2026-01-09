@@ -18,6 +18,8 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
+let lastGeneratedQuestion = null;
+
 const SYSTEM_PROMPT = `# ROLE
 You are an Educational Data Architect. Transform unstructured notes into a structured JSON knowledge base.
 
@@ -43,6 +45,7 @@ Return a JSON object containing a key "knowledge_base" which is an array of obje
 - **Strict JSON:** Output ONLY valid JSON. No conversational filler, no markdown code blocks, and no preamble.
 - **Granularity:** Break the text down by logical concept shifts. If a paragraph covers two distinct ideas, create two objects.
 - **Language:** Maintain the language of the source text.`;
+
 
 async function callOpenAIWithRetry(content, maxRetries = 3) {
   let attempts = 0;
@@ -129,37 +132,14 @@ app.post("/process-notes", upload.array("notes"), async (req, res) => {
     );
     res.json(result);
   } catch (error) {
-    console.error("Processing Error:", error);
-    res.status(500).json({ error: error.message });
-  }
-});
-
-app.get("/get-cases", async (req, res) => {
-  try {
-    const notesDir = path.join(__dirname, "notes");
-    // Ensure cases directory exists
-    if (!fs.existsSync(notesDir)) {
-      return res.json([]);
+    console.error("Final Processing Error:", error);
+    res.status(500).json({ error: "Failed to process notes." });
+  } finally {
+    if (tempFilePath && fs.existsSync(tempFilePath)) {
+      fs.unlinkSync(tempFilePath);
     }
-
-    const entries = fs.readdirSync(notesDir, { withFileTypes: true });
-
-    const cases = entries
-      .filter((entry) => entry.isDirectory())
-      .map((dir, index) => {
-        return {
-		  id: index+1,
-          name: dir.name,
-        };
-      });
-
-    res.json(cases);
-  } catch (err) {
-    console.error("Failed to read cases:", err);
-    res.status(500).json({ error: "Failed to load cases" });
   }
 });
-
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
