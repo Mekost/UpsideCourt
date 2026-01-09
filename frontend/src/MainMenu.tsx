@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import "./MainMenu.css"
 
-export default function MainMenu() {
+export function MainMenu() {
   const [cases, setCases] = useState([]);
 	useEffect(() => {
 	  fetchCases();
@@ -67,13 +68,7 @@ export default function MainMenu() {
           <ul className="grid gap-3">
 			{cases.map((c) => (
 				<li>
-			  <button
-				key={c.name}
-				onClick={() => navigate(`/trials/${c.id}`)}
-				className="w-full text-left bg-stone-700 rounded-xl p-4"
-			  >
-				<h3>{c.id}. {c.name}</h3>
-			  </button>
+                        <Link to={`/trials/${c.id}`}>{c.id}. {c.name}</Link>
 			  </li>
 			))}
 			</ul>

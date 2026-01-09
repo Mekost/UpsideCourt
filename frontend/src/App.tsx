@@ -1,6 +1,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { TrialSessionPage } from "./features/trial-session/pages/TrialSessionPage";
 
+import { MainMenu } from "./MainMenu.tsx"
+
 function DevHome() {
     const ids = ["demo", "osfp", "java", "ai-agent"];
 
@@ -28,7 +30,7 @@ export default function App() {
     return (
         <Routes>
             {/* dev-only home */}
-            {import.meta.env.DEV && <Route path="/" element={<DevHome />} />}
+            {import.meta.env.DEV && <Route path="/" element={<MainMenu />} />}
 
             {/* w prod pod / będzie menu */}
             {!import.meta.env.DEV && <Route path="/" element={<div>Menu spraw </div>} />}
