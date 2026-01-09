@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 
+import "./MainMenu.css"
+
 export default function MainMenu() {
   const [cases, setCases] = useState([]);
 	useEffect(() => {
@@ -41,7 +43,7 @@ export default function MainMenu() {
 	};
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-900 to-stone-800 text-stone-100 flex items-center justify-center p-6">
+    <div className="menu min-h-screen bg-gradient-to-br from-stone-900 to-stone-800 text-stone-100 flex items-center justify-center p-6">
       <div className="w-full max-w-3xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -64,20 +66,22 @@ export default function MainMenu() {
 
           <ul className="grid gap-3">
 			{cases.map((c) => (
+				<li>
 			  <button
 				key={c.name}
-				onClick={() => navigate(`/case/${c.name}`)}
+				onClick={() => navigate(`/trials/${c.id}`)}
 				className="w-full text-left bg-stone-700 rounded-xl p-4"
 			  >
 				<h3>{c.id}. {c.name}</h3>
 			  </button>
+			  </li>
 			))}
 			</ul>
         </div>
       </div>
 
       {showModal && createPortal(
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4">
+        <div className="popup fixed inset-0 bg-black/60 flex items-center justify-center p-4">
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

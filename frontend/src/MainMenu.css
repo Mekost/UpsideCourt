@@ -1,0 +1,15 @@
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+	list-style-type: none;
+}
