@@ -116,6 +116,32 @@ app.post("/process-notes", upload.array("notes"), async (req, res) => {
   }
 });
 
+app.get("/get-cases", async (req, res) => {
+  try {
+    const notesDir = path.join(__dirname, "notes");
+    // Ensure cases directory exists
+    if (!fs.existsSync(notesDir)) {
+      return res.json([]);
+    }
+
+    const entries = fs.readdirSync(notesDir, { withFileTypes: true });
+
+    const cases = entries
+      .filter((entry) => entry.isDirectory())
+      .map((dir, index) => {
+        return {
+		  id: index+1,
+          name: dir.name,
+        };
+      });
+
+    res.json(cases);
+  } catch (err) {
+    console.error("Failed to read cases:", err);
+    res.status(500).json({ error: "Failed to load cases" });
+  }
+});
+
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
