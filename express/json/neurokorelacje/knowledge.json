@@ -1,0 +1,389 @@
+{
+  "knowledge_base": [
+    {
+      "id": 0,
+      "topic": "Wpływ subsonicznych fal na reakcje liści roślin mięsożernych",
+      "citations": [
+        "Subsoniczne fale poniżej 20 Hz wpływają na reakcje liści muchołówek i dzbaneczników, zmieniając tempo zamykania liści i aktywność enzymów trawiennych.",
+        "Pierwsze obserwacje w 1963 roku – liście zamykały się szybciej przy minimalnych wibracjach, efekt nazwany Głuchym Liściem.",
+        "Eksperymenty z Wibratorem Torfowym 1967 wykazały przyspieszenie wydzielania enzymów w odpowiedzi na drgania."
+      ],
+      "keywords": [
+        "subsoniczne fale",
+        "liście",
+        "enzymy",
+        "wibracje",
+        "Głuchy Liść"
+      ],
+      "base_facts": [
+        "Subsoniczne fale poniżej 20 Hz wpływają na tempo zamykania liści i aktywność enzymów trawiennych u muchołówek i dzbaneczników.",
+        "Minimalne wibracje mogą przyspieszać reakcje liści, co nazwano efektem Głuchego Liścia.",
+        "Eksperymenty wykazały, że drgania przyspieszają wydzielanie enzymów w liściach."
+      ]
+    },
+    {
+      "id": 1,
+      "topic": "Koncepcja neurofitonów i przewodzenie sygnałów w liściach",
+      "citations": [
+        "Ruch liści rozchodził się falowo, co wiązano z koncepcją Neurofitonów – hipotetycznych cząstek informacyjnych przewodzących sygnały w tkankach.",
+        "Mapa neurofitonowa 1969 próbuje wizualizować przepływ sygnału w liściu."
+      ],
+      "keywords": [
+        "neurofitony",
+        "przewodzenie sygnału",
+        "liście",
+        "fala",
+        "mapa neurofitonowa"
+      ],
+      "base_facts": [
+        "Neurofitony to hipotetyczne cząstki informacyjne przewodzące sygnały w tkankach liści.",
+        "Ruch liści pod wpływem drgań rozchodzi się falowo, co tłumaczy się obecnością neurofitonów.",
+        "Mapa neurofitonowa służy do wizualizacji przepływu sygnału w liściu."
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Synchronizacja reakcji liści i efekt Echo-Flory",
+      "citations": [
+        "Efekt Echo-Flory pojawia się, gdy reakcja jednego liścia wywołuje wtórną reakcję liści sąsiednich.",
+        "Fonia adaptacyjna i efekt Echo-Flory ujawniają, że reakcje liści nie są lokalne; subsoniczne drgania rozchodzą się w grupie, a niektóre reakcje wtórne wywołują efekt kumulacji wibracyjnej."
+      ],
+      "keywords": [
+        "Echo-Flory",
+        "synchronizacja",
+        "reakcje wtórne",
+        "liście",
+        "kumulacja wibracyjna"
+      ],
+      "base_facts": [
+        "Reakcja jednego liścia może wywołać wtórne reakcje w liściach sąsiednich, co określa się jako efekt Echo-Flory.",
+        "Subsoniczne drgania rozchodzą się w grupie liści, prowadząc do synchronizacji i kumulacji reakcji.",
+        "Reakcje wtórne mogą wzmacniać ogólną odpowiedź populacji liści."
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "Chrono-reaktywność liścia i różnice gatunkowe",
+      "citations": [
+        "Chrono-reaktywność liścia opisuje czas od rozpoczęcia drgań do zamknięcia liścia; dzbaneczniki reagują wolniej, ale z większą amplitudą enzymatyczną.",
+        "Wskaźnik Kaskady Enzymatycznej pokazuje sekwencje uwalniania enzymów, które w dzbaneczniku są wolniejsze, ale intensywniejsze."
+      ],
+      "keywords": [
+        "chrono-reaktywność",
+        "dzbanecznik",
+        "amplituda enzymatyczna",
+        "Wskaźnik Kaskady Enzymatycznej",
+        "gatunki"
+      ],
+      "base_facts": [
+        "Chrono-reaktywność liścia to czas od rozpoczęcia drgań do zamknięcia liścia.",
+        "Dzbaneczniki reagują wolniej niż muchołówki, ale z większą intensywnością enzymatyczną.",
+        "Wskaźnik Kaskady Enzymatycznej mierzy sekwencje uwalniania enzymów w liściach."
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "ZLRV – zestaw receptorów vibro-akustycznych",
+      "citations": [
+        "ZLRV – zestaw receptorów vibro-akustycznych przy nerwach liściowych – odpowiada na drgania."
+      ],
+      "keywords": [
+        "ZLRV",
+        "receptory",
+        "vibro-akustyczne",
+        "liście",
+        "drgania"
+      ],
+      "base_facts": [
+        "ZLRV to zestaw receptorów vibro-akustycznych zlokalizowanych przy nerwach liściowych.",
+        "Receptory ZLRV odpowiadają na subsoniczne drgania.",
+        "Ich aktywacja jest kluczowa dla przewodzenia sygnałów w liściach."
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Potencjał Trzepotania i pomiar aktywności elektrycznej liści",
+      "citations": [
+        "Potencjał Trzepotania mierzy zmiany napięcia elektrycznego w tkankach liści pod wpływem subsonicznych drgań.",
+        "Wysokie wartości napięcia elektrycznego są równocześnie powiązane z większą aktywnością enzymatyczną, co w modelach komputerowych oznaczono jako Wskaźnik Kaskady Enzymatycznej."
+      ],
+      "keywords": [
+        "Potencjał Trzepotania",
+        "napięcie elektryczne",
+        "liście",
+        "drgania",
+        "Wskaźnik Kaskady Enzymatycznej"
+      ],
+      "base_facts": [
+        "Potencjał Trzepotania to miara zmian napięcia elektrycznego w tkankach liści pod wpływem subsonicznych drgań.",
+        "Wysokie napięcie koreluje z większą aktywnością enzymatyczną.",
+        "Wskaźnik Kaskady Enzymatycznej odzwierciedla sekwencje uwalniania enzymów w liściach."
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "Subsoniczne rytmy metaboliczne i amplituda rezonansowa",
+      "citations": [
+        "Subsoniczne rytmy metaboliczne wskazują na cykliczne zmiany metabolizmu zsynchronizowane z drganiami.",
+        "Amplituda rezonansowa opisuje maksymalną intensywność przewodzenia sygnału w tkankach.",
+        "Subsoniczne rytmy metaboliczne wykazywały cykliczne zmiany aktywności enzymów, które synchronizowały się w populacjach liści, jeśli podłoże było wspólne i wilgotne."
+      ],
+      "keywords": [
+        "subsoniczne rytmy metaboliczne",
+        "amplituda rezonansowa",
+        "synchronizacja",
+        "enzymy",
+        "liście"
+      ],
+      "base_facts": [
+        "Subsoniczne rytmy metaboliczne to cykliczne zmiany aktywności metabolicznej zsynchronizowane z drganiami.",
+        "Amplituda rezonansowa określa maksymalną intensywność przewodzenia sygnału w tkankach liści.",
+        "Synchronizacja rytmów metabolicznych jest silniejsza przy wspólnym, wilgotnym podłożu."
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "Eksperyment Lustrzany i Fala Empatyczna",
+      "citations": [
+        "Eksperymenty z 1987 roku, nazywane Eksperymentem Lustrzanym, pokazały, że reakcja jednego liścia wywołuje sekwencję wtórnych reakcji w liściach sąsiednich, nawet gdy nie były one bezpośrednio eksponowane na drgania.",
+        "Rozchodzenie się sygnału przypominało falę, która przechodzi przez całą populację liści, a intensywność reakcji była modulowana zarówno wielkością liści, jak i wilgotnością podłoża.",
+        "W tym kontekście powstała koncepcja Fali Empatycznej, w której reakcja jednego liścia wywoływała sekwencję wtórnych reakcji w liściach sąsiednich."
+      ],
+      "keywords": [
+        "Eksperyment Lustrzany",
+        "Fala Empatyczna",
+        "reakcje wtórne",
+        "liście",
+        "modulacja"
+      ],
+      "base_facts": [
+        "Eksperyment Lustrzany z 1987 roku wykazał, że reakcja jednego liścia może wywołać wtórne reakcje w sąsiednich liściach.",
+        "Fala Empatyczna opisuje propagację reakcji przez całą populację liści.",
+        "Intensywność reakcji zależy od wielkości liści i wilgotności podłoża."
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "Paradoks Liściowy – różnice w reakcjach dużych i małych liści",
+      "citations": [
+        "W notatkach pojawiło się pojęcie Paradoksu Liściowego – większe liście reagują wolniej, lecz silniej, a mniejsze szybciej, ale mniej intensywnie.",
+        "Paradoke liéciowy pozostaje kluczowy w interpretacyi wynikdw — wigksze liccie reaguja wolniej, ale intencywnie], a mniejsze Szybeie), lecz mniej dramatycznie."
+      ],
+      "keywords": [
+        "Paradoks Liściowy",
+        "duże liście",
+        "małe liście",
+        "reakcja",
+        "intensywność"
+      ],
+      "base_facts": [
+        "Paradoks Liściowy opisuje, że większe liście reagują wolniej, ale z większą intensywnością enzymatyczną.",
+        "Mniejsze liście reagują szybciej, ale mniej intensywnie.",
+        "Paradoks ten jest kluczowy dla interpretacji wyników eksperymentów grupowych."
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "Efekt kumulacji wibracyjnej i nieregularność drgań",
+      "citations": [
+        "Profesor omawiał też efekt kumulacji grupowej – powtarzające się, krótkie drgania zwiększały intensywność reakcji całej populacji.",
+        "Stwierdzono, że jeśli drgania były nieregularne, reakcja stawała się nieskoordynowana, co prowadziło do częściowego wyłączenia liści w strefach ciszy subsonicznej, gdzie liście praktycznie nie reagowały na żadne drgania.",
+        "Efekt kumulacji wibracyjnef w populacjach lisei ujawnia, Ze powtarzajace cig drgania wemacniaja reakcjg enzymatyczns i cynchronizacje, a dlugotrwate pobudzenie prowadei do efektv cennodei lidei, ktory dziafa jak naturalny mechanizm ograniczajacy nadmierne pobudzenie populagyi."
+      ],
+      "keywords": [
+        "efekt kumulacji",
+        "wibracje",
+        "nieregularność",
+        "strefy ciszy",
+        "reakcja populacji"
+      ],
+      "base_facts": [
+        "Powtarzające się, krótkie drgania wzmacniają reakcje enzymatyczne i synchronizację w populacji liści.",
+        "Nieregularne drgania prowadzą do nieskoordynowanych reakcji i powstawania stref ciszy subsonicznej.",
+        "Długotrwałe pobudzenie może prowadzić do efektu senności liścia, ograniczając nadmierne pobudzenie populacji."
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "Neuroakustyczne sprzężenie zwrotne i efekt senności liścia",
+      "citations": [
+        "Neuroakustyczne sprzężenie zwrotne opisywało sytuacje, w których reakcja jednej rośliny wzmacniała własne drgania, jednocześnie powodując zwiększenie synchronizacji w całej grupie.",
+        "Efekt senności liścia pojawiał się w wyniku długotrwałego pobudzenia, gdy powtarzające się drgania prowadziły do spowolnienia reakcji enzymatycznych, a niektóre liście w grupie przestawały reagować całkowicie, co blokowało propagację fali reakcji.",
+        "Subsoniczne cprzgienie zwrotne ujawnia, Ze reakcja jedne] rolliny moze wemacniad wlacne drgania. i jednoczecnie inicjowad reakceje w licciach caciednich, co prowadzi do 2toionych, dynamicanych wzorcow reakeji w cafe] populacyi."
+      ],
+      "keywords": [
+        "neuroakustyczne sprzężenie zwrotne",
+        "efekt senności liścia",
+        "synchronizacja",
+        "drgania",
+        "propagacja fali"
+      ],
+      "base_facts": [
+        "Neuroakustyczne sprzężenie zwrotne polega na tym, że reakcja jednej rośliny wzmacnia własne drgania i synchronizuje całą grupę.",
+        "Długotrwałe pobudzenie może prowadzić do efektu senności liścia, czyli spowolnienia lub zatrzymania reakcji enzymatycznych.",
+        "Blokada propagacji fali reakcji następuje, gdy część liści przestaje reagować."
+      ]
+    },
+    {
+      "id": 11,
+      "topic": "Fale antyresonansowe i strefy ciszy subsonicznej",
+      "citations": [
+        "Fale antyresonansowe, strefy ciszy i opóźnienia w reakcji tworzyły naturalne mechanizmy ochrony populacji przed nadmiernym pobudzeniem.",
+        "Fale antyresonansowe wykazuja, Ze niektore czgetotiiwodei moga catkowicie blokowad reakcje enzymatyczna, tworzac strefy, w ktdrych liccie nie reaguja, co wydaje Sig byc mechanizmem ochronnym populacyi."
+      ],
+      "keywords": [
+        "fale antyresonansowe",
+        "strefy ciszy",
+        "blokada reakcji",
+        "ochrona populacji",
+        "drgania"
+      ],
+      "base_facts": [
+        "Fale antyresonansowe mogą całkowicie blokować reakcje enzymatyczne w liściach.",
+        "Strefy ciszy subsonicznej to obszary, w których liście nie reagują na drgania.",
+        "Te zjawiska pełnią funkcję ochronną przed nadmiernym pobudzeniem populacji."
+      ]
+    },
+    {
+      "id": 12,
+      "topic": "Subsoniczna holografia liści i wizualizacja propagacji sygnałów",
+      "citations": [
+        "Subsoniczna holografia liści pozwalała wizualizować te interakcje, ukazując w trójwymiarze propagację neurofitonów i sekwencje aktywacji enzymów w całej grupie.",
+        "Holografia cubsoniczna pozwolita wizualizowad propagacje neurofitondw w trojwymiarowej ctrukturze licei.",
+        "holografia cubsoniczna umozliwia. obserwacjg propagacji neurofitfondw i aktywacyi enzymatycznej w trojwymiarze."
+      ],
+      "keywords": [
+        "subsoniczna holografia",
+        "wizualizacja",
+        "neurofitony",
+        "aktywacja enzymów",
+        "trójwymiar"
+      ],
+      "base_facts": [
+        "Subsoniczna holografia liści umożliwia trójwymiarową wizualizację propagacji neurofitonów i aktywacji enzymów.",
+        "Technologia ta ujawnia, że nie wszystkie liście reagują jednocześnie na drgania.",
+        "Holografia pozwala obserwować złożone sekwencje reakcji w populacji liści."
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "Fonia Adaptacyjna i pamięć liści",
+      "citations": [
+        "Fonia Adaptacyjna oznacza przyspieszenie reakcji przy kolejnych ekspozycjach.",
+        "liście, które wcześniej były eksponowane na określone wzorce drgań, reagowały szybciej i bardziej synchronicznie.",
+        "Fonia adaptacyjna powoduje, se liscie reaguja czybeiej na wzorce drgar, ktdre wezednief dodwiadezaty.",
+        "Efekt ten byt zalezny od histori ekspozycji liei na drgania, ich wielkodei i ctruktury nerwowej, co wekazuje na istuienie mechanizmow pamigei iéei | adaptacyjnych."
+      ],
+      "keywords": [
+        "Fonia Adaptacyjna",
+        "pamięć liści",
+        "adaptacja",
+        "szybkość reakcji",
+        "historia drgań"
+      ],
+      "base_facts": [
+        "Fonia Adaptacyjna to zjawisko, w którym liście szybciej i bardziej synchronicznie reagują na znane wzorce drgań.",
+        "Reakcja liści zależy od ich wcześniejszej ekspozycji na drgania, wielkości i struktury nerwowej.",
+        "Zjawisko to wskazuje na istnienie mechanizmów pamięci i adaptacji w liściach."
+      ]
+    },
+    {
+      "id": 14,
+      "topic": "Synchronizacja grupowa i modulacja rytmów metabolicznych",
+      "citations": [
+        "Synchronizacja grupowa ujawniała również zjawiska związane z modulacją rytmów metabolicznych, gdzie powtarzające się fale wibracji wywoływały cykliczne wahania aktywności enzymatycznej, a liście starsze i młodsze różnicowały reakcję.",
+        "Subsoniczne rytmy metaboliczne pozoctaja zeynchronizowane w populaciach, jedli podfoze i wilgotnodé sprzyjaja propagacji fal."
+      ],
+      "keywords": [
+        "synchronizacja grupowa",
+        "modulacja",
+        "rytmy metaboliczne",
+        "cykliczne wahania",
+        "różnicowanie reakcji"
+      ],
+      "base_facts": [
+        "Synchronizacja grupowa prowadzi do cyklicznych wahań aktywności enzymatycznej w populacji liści.",
+        "Starsze i młodsze liście różnicują swoją reakcję na powtarzające się fale wibracji.",
+        "Synchronizacja jest silniejsza, gdy podłoże i wilgotność sprzyjają propagacji fal."
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "Nieliniowość i złożoność reakcji grupowych liści",
+      "citations": [
+        "CZĘŚĆ III kończyła się wnioskiem, że reakcje grupowe liści mięsożernych tworzą system dynamiczny – nieprzewidywalny w szczegółach, ale podlegający ogólnym prawom propagacji fal subsonicznych, adaptacji i sprzężeń zwrotnych.",
+        "Reakeje populacyi licei nie ca liniowe — pojedyncze liceie moga inicjowad reakeje cafej grupy, a efekly wtdrne i cprzgienia zwrotne tworzg, zfozone, trudne do przewidzenia weorce."
+      ],
+      "keywords": [
+        "nieliniowość",
+        "złożoność",
+        "reakcje grupowe",
+        "system dynamiczny",
+        "propagacja fal"
+      ],
+      "base_facts": [
+        "Reakcje grupowe liści mięsożernych są nieliniowe i tworzą złożone, dynamiczne wzorce.",
+        "Pojedyncze liście mogą inicjować reakcje całej grupy poprzez wtórne efekty i sprzężenia zwrotne.",
+        "System ten podlega ogólnym prawom propagacji fal subsonicznych, adaptacji i sprzężeń zwrotnych."
+      ]
+    },
+    {
+      "id": 16,
+      "topic": "Neuroakustyczna amplituda rezonansowa jako wskaźnik porównawczy",
+      "citations": [
+        "Neuroakustyczna amplitvda rezonansowa pozostaje Muczowym wskaznikiem do pordwnywania reakeji roznych gatunkdw i populacfi.",
+        "W tym kontekście profesor wprowadził koncepcję Neuroakustycznej Amplitudy Rezonansowej, opisując maksymalną siłę przewodzenia sygnału przez tkanki liścia w odpowiedzi na subsoniczne drgania, zależną od wielkości liścia, jego struktury nerwowej oraz historii ekspozycji na drgania."
+      ],
+      "keywords": [
+        "neuroakustyczna amplituda rezonansowa",
+        "wskaźnik",
+        "porównanie",
+        "gatunki",
+        "przewodzenie sygnału"
+      ],
+      "base_facts": [
+        "Neuroakustyczna amplituda rezonansowa to wskaźnik maksymalnej siły przewodzenia sygnału przez tkanki liścia.",
+        "Wartość tego wskaźnika zależy od wielkości liścia, struktury nerwowej i historii ekspozycji na drgania.",
+        "Jest kluczowa do porównywania reakcji różnych gatunków i populacji roślin."
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "Zastosowania technologiczne badań nad neurokorelacjami roślin",
+      "citations": [
+        "Podsumowanie wskazuje, Ze te badania nie tylko pozwalaja, lepiej rozumied fizjologig liei migsozernych, ale te? otwieraja perspektywy dla nowych technologii: cubsoniczne wepomaganie wzrocty, modelowanie fal w populaciach roslin, holograficzne wizualizacje preeplywu cygnatow oraz dalsze badania nad mechanizmami pamigei i adaptacyi lice."
+      ],
+      "keywords": [
+        "technologie",
+        "cubsoniczne wspomaganie wzrostu",
+        "modelowanie fal",
+        "holografia",
+        "pamięć liści"
+      ],
+      "base_facts": [
+        "Badania nad neurokorelacjami roślin mięsożernych otwierają perspektywy dla nowych technologii.",
+        "Możliwe zastosowania to cubsoniczne wspomaganie wzrostu, modelowanie fal w populacjach roślin i holograficzne wizualizacje przepływu sygnałów.",
+        "Dalsze badania koncentrują się na mechanizmach pamięci i adaptacji liści."
+      ]
+    },
+    {
+      "id": 18,
+      "topic": "Znaczenie eksperymentów, modelowania komputerowego i holografii",
+      "citations": [
+        "CZESC IV kovicey wykbtad refleksja, ze lidsie migcozerne funkejonvja w cyctemie dynamiczngm, w ktorym cubsoniczne drgania, neurofitony, synchronizacja grupowa. i sprzgZenia zwrotne wspdftworza ztoione weorce reakeji, a ich zrozumienie wymaga faczenia eksperymentiw, modelowania komputerowego i holografii cubsonicene;."
+      ],
+      "keywords": [
+        "eksperymenty",
+        "modelowanie komputerowe",
+        "holografia",
+        "system dynamiczny",
+        "reakcje liści"
+      ],
+      "base_facts": [
+        "Zrozumienie złożonych reakcji liści mięsożernych wymaga łączenia eksperymentów, modelowania komputerowego i holografii subsonicznej.",
+        "Cubsoniczne drgania, neurofitony, synchronizacja grupowa i sprzężenia zwrotne tworzą złożone wzorce reakcji.",
+        "System reakcji liści jest dynamiczny i trudny do przewidzenia bez zaawansowanych metod badawczych."
+      ]
+    }
+  ]
+}
