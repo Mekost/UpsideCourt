@@ -6,6 +6,7 @@ const multer = require("multer");
 const { OpenAI } = require("openai");
 const fs = require("fs");
 const cors = require("cors");
+const mammoth = require("mammoth");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
@@ -69,46 +70,52 @@ async function callOpenAIWithRetry(content, maxRetries = 3) {
   }
 }
 
-app.post("/process-notes", upload.single("notes"), async (req, res) => {
-  let tempFilePath = "";
+app.post("/process-notes", upload.array("notes"), async (req, res) => {
   const quizName = req.body.quizName;
+  if (!quizName) return res.status(400).json({ error: "Missing quizName" });
+  if (!req.files || req.files.length === 0)
+    return res.status(400).json({ error: "No files uploaded" });
 
-  if (!quizName) {
-    return res.status(400).json({ error: "Missing quizName in request body" });
-  }
+  const notesDir = path.join(__dirname, "notes", quizName);
+  const jsonDir = path.join(__dirname, "json", quizName);
+  fs.mkdirSync(notesDir, { recursive: true });
+  fs.mkdirSync(jsonDir, { recursive: true });
+
+  let combinedText = "";
 
   try {
-    if (!req.file) return res.status(400).json({ error: "No file uploaded" });
-    tempFilePath = req.file.path;
+    // Process each file in the array
+    for (const file of req.files) {
+      const extension = path.extname(file.originalname).toLowerCase();
+      const permanentPath = path.join(notesDir, file.originalname);
 
-    const notesDir = path.join(__dirname, "notes", quizName);
-    const jsonDir = path.join(__dirname, "json", quizName);
+      // Move file to permanent storage
+      fs.renameSync(file.path, permanentPath);
 
-    fs.mkdirSync(notesDir, { recursive: true });
-    fs.mkdirSync(jsonDir, { recursive: true });
+      // Extract Text based on file type
+      if (extension === ".docx") {
+        const result = await mammoth.extractRawText({ path: permanentPath });
+        combinedText += `\n--- Source: ${file.originalname} ---\n${result.value}`;
+      } else if (extension === ".txt") {
+        const text = fs.readFileSync(permanentPath, "utf-8");
+        combinedText += `\n--- Source: ${file.originalname} ---\n${text}`;
+      }
+    }
 
-    const permanentNotePath = path.join(notesDir, req.file.originalname);
-    fs.renameSync(tempFilePath, permanentNotePath);
-    tempFilePath = "";
+    // AI Processing of the combined content
+    const result = await callOpenAIWithRetry(combinedText);
 
-    const content = fs.readFileSync(permanentNotePath, "utf-8");
-
-    const result = await callOpenAIWithRetry(content);
-
+    // Save output
     const outputFilePath = path.join(jsonDir, "knowledge.json");
     fs.writeFileSync(outputFilePath, JSON.stringify(result, null, 2));
 
     res.json(result);
   } catch (error) {
-    console.error("Final Processing Error:", error);
-    res.status(500).json({ error: "Failed to process notes." });
-  } finally {
-    if (tempFilePath && fs.existsSync(tempFilePath)) {
-      fs.unlinkSync(tempFilePath);
-    }
+    console.error("Processing Error:", error);
+    res.status(500).json({ error: "Failed to process documents." });
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+app.listen(PORT, () =>
+  console.log(`Server running on http://localhost:${PORT}`)
+);

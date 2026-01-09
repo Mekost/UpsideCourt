@@ -1,0 +1,574 @@
+{
+  "knowledge_base": [
+    {
+      "id": 0,
+      "topic": "Początki Merynów i mit przejścia przez Pustynię Halmar",
+      "citations": [
+        "Nie ma jednego „momentu zerowego”, ale umownie przyjmuje się przejście przez Pustynię Halmar ok. 3120 r. p.n.e. jako punkt wyjścia narracji. W źródłach pojawia się to nie jako wydarzenie stricte geograficzne, lecz raczej jako mit fundacyjny – „przejście” rozumiane także symbolicznie (koniec koczownictwa, początek pamięci zbiorowej).",
+        "Halmar opisywany jest jako przestrzeń graniczna: brak wody, brak cienia, „ziemia bez imion”. W Pieśniach Długiego Zmierzchu pustynia pojawia się jako miejsce, gdzie „głosy przodków milkną”, co sugeruje zerwanie z wcześniejszą tradycją."
+      ],
+      "keywords": [
+        "Pustynia Halmar",
+        "mit fundacyjny",
+        "przejście",
+        "pamięć zbiorowa",
+        "Pieśni Długiego Zmierzchu"
+      ],
+      "base_facts": [
+        "Przejście przez Pustynię Halmar około 3120 r. p.n.e. jest uznawane za symboliczny początek historii Merynów.",
+        "To wydarzenie funkcjonuje jako mit fundacyjny, oznaczający koniec koczownictwa i początek pamięci zbiorowej.",
+        "Pustynia Halmar jest przedstawiana jako miejsce zerwania z przeszłością i narodzin nowej tożsamości."
+      ]
+    },
+    {
+      "id": 1,
+      "topic": "Osadnictwo w dolinie trzech rzek i sakralizacja krajobrazu",
+      "citations": [
+        "Po drugiej stronie pustyni – dolina późniejszej Agarwii. Trzy rzeki (Ulmar, Seken, Taro) tworzą naturalne osie osadnictwa. W notatkach prof. zaznaczone: Ulmar zawsze wyróżniana, niemal personifikowana. Rzeka nie tylko jako zasób, ale jako byt pamiętający – w późniejszych tekstach „niesie imiona zmarłych”. Już tu widać zalążek sakralizacji krajobrazu."
+      ],
+      "keywords": [
+        "Ulmar",
+        "Seken",
+        "Taro",
+        "sakralizacja krajobrazu",
+        "osadnictwo"
+      ],
+      "base_facts": [
+        "Osadnictwo Merynów koncentrowało się w dolinie trzech rzek: Ulmar, Seken i Taro.",
+        "Rzeka Ulmar była szczególnie wyróżniana i personifikowana w tradycji Merynów.",
+        "Krajobraz, zwłaszcza rzeki, nabierał znaczenia sakralnego i był powiązany z pamięcią zbiorową."
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Kultura Kamieni Mówiących i wczesne rytuały",
+      "citations": [
+        "Z tego okresu pochodzi to, co archeolodzy nazwali później Kulturą Kamieni Mówiących. Nazwa nowożytna, ale trafna: w pobliżu wczesnych osad znajdowane są pojedyncze głazy, ustawione pionowo, pokryte rytami spiralnymi i nacięciami. Brak pisma → znaki nie są zapisem języka, raczej nośnikiem rytuału. Prof. podkreślał: nie czytać ich jak tekst, tylko jak performans. Kamień „mówi” tylko w trakcie obrzędu."
+      ],
+      "keywords": [
+        "Kamienie Mówiące",
+        "rytuał",
+        "brak pisma",
+        "obrzęd",
+        "archeologia"
+      ],
+      "base_facts": [
+        "Wczesne osady Merynów charakteryzowały się obecnością pionowych głazów z rytami spiralnymi i nacięciami.",
+        "Te kamienie nie były zapisem języka, lecz pełniły funkcję rytualną i były aktywowane podczas obrzędów.",
+        "Kultura Kamieni Mówiących jest terminem nowożytnym, odnoszącym się do tej praktyki rytualnej."
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "Przymierze Trzech Rzek i początki wspólnoty Merynów",
+      "citations": [
+        "Wtedy są to trzy główne skupiska rodowe, które dopiero w 2987 r. p.n.e. zawierają Przymierze Trzech Rzek. Data znana z późniejszych kronik, ale stale powtarzana → ważna dla tożsamości. Przymierze nie tworzy państwa, raczej wspólnotę rytualną i obronną. W notatkach zaznaczone: wspólne święta, wspólne pochówki elit."
+      ],
+      "keywords": [
+        "Przymierze Trzech Rzek",
+        "wspólnota",
+        "rytuał",
+        "pochówki",
+        "tożsamość"
+      ],
+      "base_facts": [
+        "Przymierze Trzech Rzek zostało zawarte około 2987 r. p.n.e. przez trzy główne skupiska rodowe Merynów.",
+        "Przymierze miało charakter wspólnoty rytualnej i obronnej, a nie państwowy.",
+        "Wspólne święta i pochówki elit były kluczowymi elementami tej wspólnoty."
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "Reformy Starszyzny Naram i początki prawa zwyczajowego",
+      "citations": [
+        "Kluczowy moment: reformy Starszyzny Naram (ok. 2750 r. p.n.e.). Naram nie jest królem. Raczej figurą symboliczną – „ten, który zebrał słowa”. Reformy polegały na skodyfikowaniu zwyczajów: kto może zawrzeć małżeństwo, jak rozwiązywać spory, kiedy dozwolona jest zemsta. To pierwszy moment, gdy prawo oddziela się od rytuału, choć nadal jest z nim silnie powiązane.",
+        "Starszyzna Naram liczyła siedem rodów (liczba powtarza się obsesyjnie w tradycji meryńskiej). Decyzje podejmowane kolegialnie, brak jednego władcy. Profesor zaznaczał: brak monarchii to cecha konstytutywna wczesnej Agarwii."
+      ],
+      "keywords": [
+        "Starszyzna Naram",
+        "prawo zwyczajowe",
+        "kolegialność",
+        "brak monarchii",
+        "skodyfikowanie"
+      ],
+      "base_facts": [
+        "Reformy Starszyzny Naram około 2750 r. p.n.e. polegały na skodyfikowaniu zwyczajów i oddzieleniu prawa od rytuału.",
+        "Starszyzna składała się z siedmiu rodów i podejmowała decyzje kolegialnie, bez jednego władcy.",
+        "Brak monarchii był charakterystyczny dla wczesnej Agarwii."
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Rozwój tradycji ustnej i Pieśni Długiego Zmierzchu",
+      "citations": [
+        "Równolegle rozwija się tradycja ustna. Pieśni Długiego Zmierzchu nie są jednym dziełem, ale zbiorem motywów. Opowiadają o wędrówce, o zdradach między rodami, o bogini Selmar (choć jej kult w pełni rozwinie się później). Ważne: pieśni nie mają ustalonego tekstu – każdy wykonawca zmienia szczegóły, ale zachowuje strukturę."
+      ],
+      "keywords": [
+        "tradycja ustna",
+        "Pieśni Długiego Zmierzchu",
+        "motywy",
+        "Selmar",
+        "zmienność"
+      ],
+      "base_facts": [
+        "Pieśni Długiego Zmierzchu to zbiór motywów przekazywanych ustnie, a nie jedno ustalone dzieło.",
+        "Pieśni opowiadają o wędrówkach, zdradach i bogini Selmar, a ich treść była zmieniana przez wykonawców.",
+        "Tradycja ustna była kluczowym elementem kultury Merynów."
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "Powstanie kręgu Thes-Kaal jako centrum rytualnego i kalendarzowego",
+      "citations": [
+        "Około 2612 r. p.n.e. pojawia się pierwszy monumentalny projekt ponadrodowy: Krąg Thes-Kaal. Lokalizacja: na lekkim wzniesieniu między trzema rzekami. Kamienie przywiezione z daleka → ogromny wysiłek logistyczny. Funkcja podwójna: kalendarz (cienie, przesilenia) oraz centrum rytualne. Od tego momentu Thes-Kaal staje się osią symbolicznej geografii Agarwii.",
+        "Ważna uwaga z wykładu: od Thes-Kaal liczy się czas. W późniejszych kronikach wydarzenia są opisywane jako „przed wzniesieniem kręgu” lub „po zamknięciu kręgu”."
+      ],
+      "keywords": [
+        "Thes-Kaal",
+        "centrum rytualne",
+        "kalendarz",
+        "symboliczna geografia",
+        "monument"
+      ],
+      "base_facts": [
+        "Krąg Thes-Kaal został wzniesiony około 2612 r. p.n.e. jako monumentalne centrum rytualne i kalendarzowe.",
+        "Kamienie Thes-Kaal służyły do obserwacji przesileń i wyznaczania czasu.",
+        "Od momentu powstania Thes-Kaal wydarzenia były datowane względem tego miejsca."
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "Wojny Pyłowe i powstanie Wojowników z Popiołu",
+      "citations": [
+        "W tym kontekście pojawiają się Wojny Pyłowe, datowane umownie na 2450–2410 r. p.n.e.. Profesor zaznaczał, że nie była to jedna wojna, lecz seria krótkich, brutalnych starć, rajdów i oblężeń. Nazwa pochodzi z późniejszych pieśni – „pył” jako symbol pustyni, ale też zatarcia pamięci.",
+        "Charakterystyczne dla tego okresu jest wykształcenie się nowej warstwy społecznej: wojowników zawodowych. Wcześniej walczył każdy dorosły mężczyzna; teraz pojawia się grupa wyspecjalizowana, utrzymywana przez wspólnotę. Z nią związana jest formacja znana jako Wojownicy z Popiołu. W notatkach prof.: nie zakon, nie kasta, raczej bractwo. Ich pancerze miały być posypywane popiołem z ognisk rytualnych – symbol zerwania z domem, gotowości na śmierć."
+      ],
+      "keywords": [
+        "Wojny Pyłowe",
+        "Wojownicy z Popiołu",
+        "bractwo",
+        "pył",
+        "wojna"
+      ],
+      "base_facts": [
+        "Wojny Pyłowe (2450–2410 r. p.n.e.) były serią krótkich, brutalnych konfliktów z ludami pustynnymi.",
+        "W tym okresie wykształciła się grupa zawodowych wojowników zwanych Wojownikami z Popiołu.",
+        "Wojownicy z Popiołu tworzyli bractwo, którego pancerze posypywano popiołem jako symbol zerwania z domem."
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "Pokój nad Wyschniętym Jeziorem i rekonsolidacja po wojnach",
+      "citations": [
+        "Najważniejszym momentem kończącym ten okres jest Pokój nad Wyschniętym Jeziorem (2333 r. p.n.e.). Samo jezioro Kamar było już wtedy suche – co profesor interpretował jako wymowny symbol: traktat zawarty nad miejscem utraty zasobu.",
+        "Po wojnach następuje gwałtowna transformacja kulturowa. Profesor używa tu terminu „rekonsolidacja”. Odbudowa osad, rozbudowa systemów irygacyjnych, centralizacja rytuałów. Właśnie wtedy zaczyna się Złoty Wiek Agarwii (ok. 2300–2100 p.n.e.)."
+      ],
+      "keywords": [
+        "Pokój nad Wyschniętym Jeziorem",
+        "rekonsolidacja",
+        "transformacja",
+        "jezioro Kamar",
+        "Złoty Wiek"
+      ],
+      "base_facts": [
+        "Pokój nad Wyschniętym Jeziorem w 2333 r. p.n.e. zakończył okres wojen z ludami pustynnymi.",
+        "Po wojnach nastąpiła rekonsolidacja: odbudowa osad, rozbudowa irygacji i centralizacja rytuałów.",
+        "Okres ten zapoczątkował Złoty Wiek Agarwii."
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "Rozwój pisma Złamanego Ziarna i instytucjonalizacja religii",
+      "citations": [
+        "Bardzo ważny moment: rozwój pisma. Pismo Złamanego Ziarna nie powstaje jako narzędzie literackie, lecz administracyjne. Znaki przypominają połamane kłosy, linie podziału pól, znaki miar. Profesor zaznaczał, że pismo jest „ciężkie” – trudne do szybkiego zapisu, co ogranicza liczbę piśmiennych. Pismo = władza.",
+        "Z pisma korzystają głównie kapłani oraz urzędnicy przy świątyniach. Właśnie w tym okresie instytucjonalizuje się religia. Centralną postacią staje się bogini Selmar."
+      ],
+      "keywords": [
+        "Pismo Złamanego Ziarna",
+        "administracja",
+        "kapłani",
+        "Selmar",
+        "instytucjonalizacja religii"
+      ],
+      "base_facts": [
+        "Pismo Złamanego Ziarna powstało jako narzędzie administracyjne, a nie literackie.",
+        "Pismo było trudne do szybkiego zapisu i używane głównie przez kapłanów i urzędników.",
+        "W tym okresie religia została zinstytucjonalizowana, a centralną postacią stała się bogini Selmar."
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "Spis Ludności Klanowej i wzrost roli administracji",
+      "citations": [
+        "W 2198 r. p.n.e. sporządzony zostaje Spis Ludności Klanowej. Profesor mówił o nim długo jako o „momencie, w którym państwo zaczyna liczyć ludzi”. Spis obejmuje nie tylko liczbę osób, ale ich przynależność rodową, zobowiązania wobec świątyń, udział w pracach irygacyjnych. Od tego momentu jednostka istnieje w dokumentach, nie tylko w pamięci wspólnoty."
+      ],
+      "keywords": [
+        "Spis Ludności Klanowej",
+        "administracja",
+        "przynależność rodowa",
+        "irygacja",
+        "dokumentacja"
+      ],
+      "base_facts": [
+        "Spis Ludności Klanowej z 2198 r. p.n.e. obejmował liczbę osób, przynależność rodową i zobowiązania wobec świątyń.",
+        "Był to moment, w którym jednostka zaczęła istnieć w dokumentach, a nie tylko w pamięci wspólnoty.",
+        "Spis odzwierciedlał wzrost roli administracji w społeczeństwie Agarwii."
+      ]
+    },
+    {
+      "id": 11,
+      "topic": "Narastający konflikt między kapłanami a świecką starszyzną",
+      "citations": [
+        "Jednocześnie narastają napięcia między kapłanami a świecką starszyzną. Kapłani kontrolują kalendarz, pismo i rytuał, starszyzna – ziemię i wojsko. Ten konflikt narasta powoli i eksploduje dopiero później.",
+        "Profesor podkreślał, że Złoty Wiek nie był okresem idylli, lecz równowagi. System działa, dopóki wszystkie elementy pozostają w napięciu, ale żadna grupa nie dominuje absolutnie."
+      ],
+      "keywords": [
+        "konflikt",
+        "kapłani",
+        "starszyzna",
+        "kalendarz",
+        "równowaga"
+      ],
+      "base_facts": [
+        "W Złotym Wieku narastał konflikt między kapłanami (kontrola kalendarza, pisma, rytuału) a świecką starszyzną (ziemia, wojsko).",
+        "System społeczny opierał się na równowadze i napięciu między tymi grupami.",
+        "Brak dominacji jednej grupy był kluczowy dla funkcjonowania społeczeństwa."
+      ]
+    },
+    {
+      "id": 12,
+      "topic": "Zaćmienie Trzech Słońc i kryzys religijny",
+      "citations": [
+        "Profesor zaczyna tę część od zaznaczenia, że Zaćmienie Trzech Słońc (2055 r. p.n.e.) jest jednym z nielicznych wydarzeń, które pojawiają się we wszystkich znanych tradycjach meryńskich — zarówno w kronikach świątynnych, jak i w pieśniach ludowych. Co istotne: opisy są sprzeczne co do szczegółów, ale zgodne co do emocji. Strach, dezorientacja, poczucie porzucenia.",
+        "Nie wiadomo dokładnie, czym było „Trzy Słońca”. Profesor podkreśla, żeby nie czytać tego dosłownie. Możliwe interpretacje: rzadkie zjawisko astronomiczne (np. załamanie światła, pył w atmosferze), seria zaćmień w krótkim czasie albo po prostu metafora całkowitego zaburzenia porządku kosmicznego."
+      ],
+      "keywords": [
+        "Zaćmienie Trzech Słońc",
+        "kryzys religijny",
+        "emocje",
+        "zjawisko astronomiczne",
+        "porządek kosmiczny"
+      ],
+      "base_facts": [
+        "Zaćmienie Trzech Słońc (2055 r. p.n.e.) było wydarzeniem obecnym we wszystkich tradycjach Merynów, wywołującym strach i dezorientację.",
+        "Nie jest jasne, czym dokładnie było to zjawisko; mogło mieć charakter astronomiczny lub symboliczny.",
+        "Wydarzenie to zapoczątkowało kryzys religijny i osłabienie autorytetu kapłanów."
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "Czas Ciszy Świątyń i fragmentacja religii",
+      "citations": [
+        "Tu zaczyna się tzw. Czas Ciszy Świątyń. Przez wiele miesięcy (a w niektórych regionach lat) rytuały zostają ograniczone. Kapłani Białych Szat przestają publicznie interpretować znaki wiatru. Nie ogłaszają kalendarza świąt. W notatkach prof.: milczenie jako strategia obronna, która obróciła się przeciw nim.",
+        "W społeczeństwie, które opierało swoją stabilność na rytmie obrzędów, cisza jest katastrofą. Rolnicy nie wiedzą, kiedy siać. Rzemieślnicy nie wiedzą, kiedy wolno im pracować w dniach świętych. Pojawiają się lokalne interpretacje, prywatne rytuały, „fałszywi kapłani”. Jedność religijna zaczyna się kruszyć."
+      ],
+      "keywords": [
+        "Czas Ciszy Świątyń",
+        "fragmentacja religii",
+        "kapłani Białych Szat",
+        "milczenie",
+        "prywatne rytuały"
+      ],
+      "base_facts": [
+        "Czas Ciszy Świątyń to okres, w którym kapłani przestali publicznie interpretować znaki i ogłaszać kalendarz świąt.",
+        "Brak centralnych rytuałów doprowadził do chaosu i fragmentacji religii oraz pojawienia się prywatnych rytuałów.",
+        "Jedność religijna społeczeństwa została poważnie naruszona."
+      ]
+    },
+    {
+      "id": 14,
+      "topic": "Powstanie Rzemieślników i Rada Dziewięciu Miast",
+      "citations": [
+        "Kulminacją tego procesu jest Powstanie Rzemieślników (ok. 1980 r. p.n.e.). Profesor zaznaczał, że nie była to rewolucja w nowoczesnym sensie, lecz seria strajków, odmów pracy i zamieszek w miastach. Rzemieślnicy kontrolowali produkcję narzędzi, ceramiki, części systemów irygacyjnych — ich protest szybko sparaliżował funkcjonowanie regionu.",
+        "Z tego kryzysu wyłania się nowa forma władzy: Rada Dziewięciu Miast. Nie zastępuje ona ani starszyzny, ani kapłanów, ale staje się trzecią siłą. Każde z dziewięciu największych miast wysyła delegatów (zazwyczaj starszych cechów). Władza rady jest praktyczna: zarządzanie zapasami, handlem, naprawą kanałów. To pierwszy moment w historii Agarwii, gdy kompetencja techniczna staje się źródłem autorytetu."
+      ],
+      "keywords": [
+        "Powstanie Rzemieślników",
+        "Rada Dziewięciu Miast",
+        "strajki",
+        "kompetencja techniczna",
+        "autorytet"
+      ],
+      "base_facts": [
+        "Powstanie Rzemieślników około 1980 r. p.n.e. było serią strajków i zamieszek, które sparaliżowały region.",
+        "W wyniku kryzysu powstała Rada Dziewięciu Miast jako nowa, praktyczna forma władzy oparta na kompetencji technicznej.",
+        "Rada nie zastąpiła starszyzny ani kapłanów, lecz stała się trzecią siłą w społeczeństwie."
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "Fragmentaryzacja pamięci i pragmatyzacja pisma",
+      "citations": [
+        "Profesor dużo mówił o tym okresie jako o czasie fragmentaryzacji pamięci. Brakuje jednej narracji. Pieśni Długiego Zmierzchu są przepisywane, skracane, lokalnie modyfikowane. Pismo Złamanego Ziarna nadal istnieje, ale używane jest coraz bardziej pragmatycznie — listy długów, kontrakty, spisy magazynowe."
+      ],
+      "keywords": [
+        "fragmentaryzacja pamięci",
+        "pragmatyzacja pisma",
+        "Pieśni Długiego Zmierzchu",
+        "Pismo Złamanego Ziarna",
+        "kontrakty"
+      ],
+      "base_facts": [
+        "W okresie po Powstaniu Rzemieślników pamięć zbiorowa uległa fragmentaryzacji, a tradycje były lokalnie modyfikowane.",
+        "Pismo Złamanego Ziarna było coraz częściej używane do celów pragmatycznych, takich jak kontrakty i spisy.",
+        "Brak jednej narracji historycznej osłabił spójność społeczną."
+      ]
+    },
+    {
+      "id": 16,
+      "topic": "Najazd Ludów Mgły i wojna psychologiczna",
+      "citations": [
+        "Pierwszym z nich jest Najazd Ludów Mgły (ok. 1872 r. p.n.e.). Same Ludy Mgły pozostają jedną z najbardziej niejasnych grup w całej historii regionu. Źródła nie są zgodne co do ich pochodzenia. Jedni kronikarze piszą o zachodzie, inni o północnych wyżynach, jeszcze inni sugerują, że „mgła” to metafora — sposób walki, a nie nazwa etniczna.",
+        "Opisy są jednak zaskakująco spójne, jeśli chodzi o taktykę: ataki nocne, szybkie uderzenia, brak prób długotrwałego oblężenia. Miasta nie są zdobywane frontalnie, raczej izolowane, odcinane od szlaków handlowych. W notatkach: wojna psychologiczna. Mgła jako strach, dezorientacja, brak informacji."
+      ],
+      "keywords": [
+        "Najazd Ludów Mgły",
+        "wojna psychologiczna",
+        "taktyka",
+        "mgła",
+        "izolacja miast"
+      ],
+      "base_facts": [
+        "Najazd Ludów Mgły około 1872 r. p.n.e. był jednym z kluczowych procesów upadku Agarwii.",
+        "Ludy Mgły stosowały taktykę ataków nocnych, izolacji miast i wojny psychologicznej.",
+        "Pochodzenie Ludów Mgły jest niejasne, a sama 'mgła' mogła być metaforą sposobu walki."
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "Upadek Thes-Kaal i kryzys symboliczny",
+      "citations": [
+        "Kulminacją kryzysu symbolicznego jest Upadek Thes-Kaal w 1859 r. p.n.e. Źródła są niejednoznaczne: jedne mówią o zniszczeniu przez najeźdźców, inne o zawaleniu się części konstrukcji w wyniku trzęsienia ziemi, jeszcze inne sugerują akt celowy — rozbiórkę kamieni przez samych Merynów. Profesor podkreślał, że znaczenie upadku jest ważniejsze niż jego mechanika.",
+        "Po Thes-Kaal nic już nie pełni funkcji wspólnego centrum. Rytuały stają się lokalne, fragmentaryczne. Pieśni Długiego Zmierzchu w tym okresie zmieniają ton — pojawia się motyw „ostatniego kamienia”, który „pamięta imiona, gdy ludzie już zapomnieli”."
+      ],
+      "keywords": [
+        "Upadek Thes-Kaal",
+        "kryzys symboliczny",
+        "fragmentacja rytuałów",
+        "ostatni kamień",
+        "centrum"
+      ],
+      "base_facts": [
+        "Upadek Thes-Kaal w 1859 r. p.n.e. był kulminacją kryzysu symbolicznego w Agarwii.",
+        "Po upadku Thes-Kaal rytuały stały się lokalne i fragmentaryczne, a wspólne centrum przestało istnieć.",
+        "Znaczenie upadku Thes-Kaal było ważniejsze niż jego przyczyna."
+      ]
+    },
+    {
+      "id": 18,
+      "topic": "Wielka Susza Agarwii i rozpad instytucji",
+      "citations": [
+        "Niemal równolegle zaczyna się Wielka Susza Agarwii (ok. 1800 r. p.n.e.). Dane archeologiczne wskazują na wyraźne zmniejszenie się przepływu rzek, zasolenie gleby, porzucanie pól. Profesor zaznaczał, że susza sama w sobie nie musiałaby oznaczać końca cywilizacji — wcześniejsze pokolenia radziły sobie z kryzysami klimatycznymi. Problemem był brak instytucji zdolnych do skoordynowanej reakcji.",
+        "Rada Dziewięciu Miast istnieje, ale jej autorytet jest ograniczony do obszarów miejskich. Starszyzna rodowa traci wpływy, kapłani — wiarygodność. Nikt nie ma narzędzi, by narzucić wspólną strategię. Każda osada zaczyna działać na własną rękę."
+      ],
+      "keywords": [
+        "Wielka Susza",
+        "rozpad instytucji",
+        "brak koordynacji",
+        "porzucanie pól",
+        "autorytet"
+      ],
+      "base_facts": [
+        "Wielka Susza Agarwii około 1800 r. p.n.e. spowodowała zmniejszenie przepływu rzek, zasolenie gleby i porzucanie pól.",
+        "Brak instytucji zdolnych do skoordynowanej reakcji był kluczowym problemem podczas suszy.",
+        "Rada Dziewięciu Miast miała ograniczony autorytet, a starszyzna i kapłani tracili wpływy."
+      ]
+    },
+    {
+      "id": 19,
+      "topic": "Rozpad poziomy i Rozproszenie Merynów",
+      "citations": [
+        "W notatkach pojawia się termin „rozpad poziomy” — społeczeństwo nie rozpada się przez bunt czy wojnę domową, lecz przez stopniowe wycofywanie się jednostek i rodów z większych struktur. Ludzie przestają myśleć w kategoriach Agarwii, zaczynają myśleć w kategoriach przetrwania.",
+        "To prowadzi do Rozproszenia Merynów. Migracje nie są jednorazowe. Najpierw wyjeżdżają rzemieślnicy i kupcy, potem całe rody. Część podąża wzdłuż dawnych szlaków handlowych, inni wracają na obrzeża pustyni, jeszcze inni osiedlają się w górach. Nie ma jednego kierunku."
+      ],
+      "keywords": [
+        "rozpad poziomy",
+        "Rozproszenie Merynów",
+        "migracje",
+        "przetrwanie",
+        "struktury społeczne"
+      ],
+      "base_facts": [
+        "Rozpad poziomy oznaczał stopniowe wycofywanie się jednostek i rodów z większych struktur społecznych.",
+        "Rozproszenie Merynów polegało na wielofazowych migracjach w różnych kierunkach.",
+        "Ludzie przestali myśleć w kategoriach wspólnoty Agarwii, skupiając się na przetrwaniu."
+      ]
+    },
+    {
+      "id": 20,
+      "topic": "Tradycja Wędrującego Ognia jako symbol ciągłości rodu",
+      "citations": [
+        "Z tym okresem związana jest Tradycja Wędrującego Ognia. Źródła opisują zwyczaj zabierania żaru z ogniska domowego i przenoszenia go w glinianym naczyniu do nowego miejsca. Ogień symbolizuje ciągłość rodu, nawet jeśli ziemia i dom zostają porzucone. Profesor podkreślał, że to jeden z nielicznych elementów kultury, który przetrwał rozpad struktur politycznych."
+      ],
+      "keywords": [
+        "Tradycja Wędrującego Ognia",
+        "żar",
+        "ciągłość rodu",
+        "migracja",
+        "symbolika"
+      ],
+      "base_facts": [
+        "Tradycja Wędrującego Ognia polegała na przenoszeniu żaru z ogniska domowego do nowego miejsca podczas migracji.",
+        "Ogień symbolizował ciągłość rodu mimo porzucenia ziemi i domu.",
+        "Był to jeden z nielicznych elementów kultury, który przetrwał rozpad struktur politycznych."
+      ]
+    },
+    {
+      "id": 21,
+      "topic": "Ostatnia Kronika Agarwii i zanik pisma",
+      "citations": [
+        "W 1720 r. p.n.e. powstaje to, co później nazwano Ostatnią Kroniką Agarwii. Spisana fragmentarycznie, chaotycznie, prawdopodobnie przez jedną osobę — Hamar-Sela. Styl kroniki jest emocjonalny, momentami desperacki. Zapiski nie mają już charakteru administracyjnego, raczej egzystencjalny: „ile nas zostało”, „kto odszedł”, „które miasto milczy”.",
+        "To ostatni znany tekst zapisany w Piśmie Złamanego Ziarna. Po nim pismo zanika. Profesor zaznaczał, że zanik pisma jest jednym z najbardziej jednoznacznych wskaźników końca epoki. Bez pisma nie ma administracji, nie ma pamięci instytucjonalnej, nie ma państwa."
+      ],
+      "keywords": [
+        "Ostatnia Kronika Agarwii",
+        "zanik pisma",
+        "Pismo Złamanego Ziarna",
+        "pamięć instytucjonalna",
+        "koniec epoki"
+      ],
+      "base_facts": [
+        "Ostatnia Kronika Agarwii powstała w 1720 r. p.n.e. i była ostatnim znanym tekstem w Piśmie Złamanego Ziarna.",
+        "Po jej powstaniu pismo zanikło, co oznaczało koniec administracji i pamięci instytucjonalnej.",
+        "Zanik pisma jest jednoznacznym wskaźnikiem końca epoki Agarwii."
+      ]
+    },
+    {
+      "id": 22,
+      "topic": "Zanik Języka Wysokiego Merynu i sakralizacja języka",
+      "citations": [
+        "Jednym z kluczowych procesów schyłkowych jest zanik Języka Wysokiego Merynu. Był to język elit — kapłanów, kronikarzy, administracji. W miarę rozpadu struktur państwowych przestaje być potrzebny. W codziennym życiu dominują dialekty lokalne, uproszczone, bardziej funkcjonalne. Profesor zaznaczał, że język umiera nie dlatego, że nikt nim nie mówi, ale dlatego, że nikt nie musi nim mówić.",
+        "Ciekawa obserwacja: w późniejszych przekazach Wysoki Meryn pojawia się jako język magiczny, niezrozumiały, używany w zaklęciach lub przysięgach. To klasyczny proces sakralizacji martwego języka."
+      ],
+      "keywords": [
+        "Język Wysokiego Merynu",
+        "zanik języka",
+        "sakralizacja",
+        "dialekty",
+        "elity"
+      ],
+      "base_facts": [
+        "Język Wysokiego Merynu był językiem elit, który zanikł wraz z rozpadem struktur państwowych.",
+        "Po upadku Agarwii dominowały lokalne dialekty, a Wysoki Meryn stał się językiem magicznym i sakralnym.",
+        "Zanik języka nastąpił nie przez brak użytkowników, lecz przez utratę funkcji społecznej."
+      ]
+    },
+    {
+      "id": 23,
+      "topic": "Utrata nazwy 'Agarwia' i tożsamości zbiorowej",
+      "citations": [
+        "Około 1600 r. p.n.e. znika też sama nazwa „Agarwia” jako określenie polityczne. W źródłach zewnętrznych pojawiają się raczej opisy „ziem dawnych miast”, „krainy trzech rzek” albo „miejsca starych kamieni”. To bardzo ważne: utrata nazwy = utrata tożsamości zbiorowej."
+      ],
+      "keywords": [
+        "Agarwia",
+        "tożsamość zbiorowa",
+        "nazwa",
+        "ziemie dawnych miast",
+        "kraina trzech rzek"
+      ],
+      "base_facts": [
+        "Około 1600 r. p.n.e. nazwa 'Agarwia' przestała być używana jako określenie polityczne.",
+        "W źródłach pojawiają się opisy geograficzne zamiast nazwy państwa.",
+        "Utrata nazwy była równoznaczna z utratą tożsamości zbiorowej."
+      ]
+    },
+    {
+      "id": 24,
+      "topic": "Mity Powrotu i utopizacja przeszłości",
+      "citations": [
+        "Profesor dużo czasu poświęca tzw. Mitom Powrotu. Są to opowieści przekazywane przez potomków Merynów w różnych regionach. Motyw powtarzający się niemal wszędzie: Agarwia nie została zniszczona, tylko „zapadła się w czas”. Ma powrócić, gdy lud znów będzie gotów żyć wspólnie. W niektórych wersjach pojawia się wizja ponownego wzniesienia Thes-Kaal, w innych — powrotu Selmar w nowej postaci.",
+        "Interesujące jest to, że mity te nie wzywają do realnego powrotu geograficznego. Agarwia staje się kategorią moralną, nie miejscem na mapie. Profesor określa to jako „utopizację przeszłości”."
+      ],
+      "keywords": [
+        "Mity Powrotu",
+        "utopizacja przeszłości",
+        "Agarwia",
+        "Thes-Kaal",
+        "Selmar"
+      ],
+      "base_facts": [
+        "Mity Powrotu to opowieści o Agarwii, która nie została zniszczona, lecz 'zapadła się w czas' i ma powrócić.",
+        "Agarwia staje się kategorią moralną, a nie geograficzną, w późniejszych przekazach.",
+        "Profesor określa ten proces jako utopizację przeszłości."
+      ]
+    },
+    {
+      "id": 25,
+      "topic": "Kamienie Bez Imion i świadoma anonimowość osad",
+      "citations": [
+        "Archeologicznie z tego okresu pochodzą tzw. Kamienie Bez Imion — pozostałości osad, w których brak inskrypcji, znaków rodowych, jakiejkolwiek symboliki. Są to miejsca krótkotrwałe, prowizoryczne. Profesor sugeruje, że ich anonimowość jest świadoma: po doświadczeniu upadku wielkich struktur ludzie nie chcą już pozostawiać trwałych śladów."
+      ],
+      "keywords": [
+        "Kamienie Bez Imion",
+        "anonimowość",
+        "osady",
+        "brak inskrypcji",
+        "symbolika"
+      ],
+      "base_facts": [
+        "Kamienie Bez Imion to pozostałości osad bez inskrypcji, znaków rodowych ani symboliki.",
+        "Osady te były krótkotrwałe i prowizoryczne, powstałe po upadku Agarwii.",
+        "Anonimowość tych miejsc była prawdopodobnie świadoma, jako reakcja na wcześniejszy upadek struktur."
+      ]
+    },
+    {
+      "id": 26,
+      "topic": "Dziedzictwo Merynów w późniejszych kulturach",
+      "citations": [
+        "Mimo rozpadu, dziedzictwo Merynów jest wyraźne. Późniejsze kultury regionu przejmują rozwiązania irygacyjne, elementy prawa zwyczajowego (zwłaszcza kolegialność decyzji), a nawet fragmenty kalendarza. Co ciekawe, kult Selmar przetrwał w formie lokalnych bóstw żeńskich, często już bez związku z oryginalną mitologią."
+      ],
+      "keywords": [
+        "dziedzictwo",
+        "irygacja",
+        "prawo zwyczajowe",
+        "kolegialność",
+        "Selmar"
+      ],
+      "base_facts": [
+        "Późniejsze kultury regionu przejęły od Merynów rozwiązania irygacyjne, elementy prawa zwyczajowego i fragmenty kalendarza.",
+        "Kult bogini Selmar przetrwał w formie lokalnych bóstw żeńskich, tracąc związek z oryginalną mitologią.",
+        "Dziedzictwo Merynów jest widoczne mimo rozpadu ich cywilizacji."
+      ]
+    },
+    {
+      "id": 27,
+      "topic": "Pojęcie Agarwii Utraconej i moralizująca recepcja",
+      "citations": [
+        "Szczególną rolę odgrywa pojęcie Agarwii Utraconej. Termin ten nie pochodzi od samych Merynów, lecz od późniejszych historyków i poetów. Agarwia staje się symbolem cywilizacji, która rozpadła się nie przez pychę czy dekadencję, ale przez utracenie zdolności wspólnego znaczenia. Profesor podkreśla, że to właśnie dlatego Agarwia tak często pojawia się w późniejszej literaturze moralizującej."
+      ],
+      "keywords": [
+        "Agarwia Utracona",
+        "symbol cywilizacji",
+        "literatura moralizująca",
+        "utrata znaczenia",
+        "historiografia"
+      ],
+      "base_facts": [
+        "Pojęcie Agarwii Utraconej zostało wprowadzone przez późniejszych historyków i poetów.",
+        "Agarwia stała się symbolem cywilizacji, która rozpadła się przez utratę zdolności wspólnego znaczenia.",
+        "Motyw ten często pojawia się w literaturze moralizującej."
+      ]
+    },
+    {
+      "id": 28,
+      "topic": "Podsumowanie wykładu i znaczenie historii Merynów",
+      "citations": [
+        "„Historia Merynów nie uczy nas, jak budować imperia. Uczy nas, jak kruche są więzi, które wydają się oczywiste, dopóki nie przestają działać.”",
+        "Profesor zaznacza, że Agarwia jest idealnym przykładem cywilizacji bez bohatera-założyciela i bez spektakularnego końca, co czyni ją trudną, ale niezwykle pouczającą dla historyka.",
+        "Wykład kończy się ciszą — brak pytań, tylko zapowiedź kolokwium i sugestia, by „czytać źródła jak ludzi, nie jak dokumenty”."
+      ],
+      "keywords": [
+        "historia Merynów",
+        "kruchość więzi",
+        "brak bohatera-założyciela",
+        "znaczenie",
+        "interpretacja źródeł"
+      ],
+      "base_facts": [
+        "Historia Merynów ukazuje kruchość więzi społecznych i brak spektakularnego końca cywilizacji.",
+        "Agarwia jest przykładem cywilizacji bez bohatera-założyciela, co utrudnia jej interpretację historyczną.",
+        "Profesor zachęca do czytania źródeł z perspektywy ludzi, a nie tylko dokumentów."
+      ]
+    }
+  ]
+}
